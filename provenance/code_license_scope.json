@@ -1,0 +1,29 @@
+{
+  "license": "MIT (LICENSE-CODE)",
+  "scope": "Original project code and synthetic fixtures only; no grant for omitted third-party materials or underlying corpus.",
+  "files": [
+    "data/examples/synthetic_predictions.jsonl",
+    "data/examples/synthetic_reference.json",
+    "src/rhyme_bench/__init__.py",
+    "src/rhyme_bench/__main__.py",
+    "src/rhyme_bench/cli.py",
+    "src/rhyme_bench/contracts.py",
+    "src/rhyme_bench/scoring.py",
+    "study_2026-10-08/analysis.py",
+    "study_2026-10-08/context/extract_topintzi.py",
+    "study_2026-10-08/preparation/freeze_dataset.py",
+    "study_2026-10-08/preparation/prepare_dataset.py",
+    "study_2026-10-08/preparation/validate_dataset.py",
+    "study_2026-10-08/prepare_experiments.py",
+    "study_2026-10-08/runner.py",
+    "study_2026-10-08/verifier/__init__.py",
+    "study_2026-10-08/verifier/adapter.py",
+    "tests/test_public_replay.py",
+    "tests/test_rhyme_bench.py",
+    "tests/test_study_analysis_2026.py",
+    "tests/test_study_runner_2026.py",
+    "tests_private/test_verifier_repair_2026.py",
+    "tools/check_private_assets.py",
+    "tools/replay_results.py"
+  ]
+}

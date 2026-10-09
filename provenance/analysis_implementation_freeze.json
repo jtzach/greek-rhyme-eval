@@ -1,0 +1,50 @@
+{
+  "frozen_utc": "2026-10-08T21:30:20.511076+00:00",
+  "status": "implementation and tests frozen during phase1 inference; no main experimental responses or outcomes accessed by analysis author",
+  "planned_statistics_source": "protocol_frozen.json (experiment design/statistics already fixed)",
+  "files_sha256": {
+    "analysis.py": "c839c7e9cfefc3f443441f041ee6b8169956e70b97adbe24b02a6b63dea07ba6",
+    "../tests/test_study_analysis_2026.py": "d5792b480e8e624a5c4fdfced5d8671ff2766f98da035bc5943039a58e43d9a9",
+    "protocol_frozen.json": "27cd61a90975048b0f7afbdf39fc08dc8c46e88ab5ca1ded931046cb1493d00e"
+  },
+  "validation": {
+    "synthetic_unit_tests_passed": 21,
+    "independent_review": "../reviews/analysis_review.md",
+    "synthetic_full_size_record_count": 11040,
+    "synthetic_full_size_item_condition_count": 5520,
+    "png_pdf_figure_types": 4,
+    "main_outcomes_read": false,
+    "validation_record": "synthetic_validation/validation_record.json"
+  },
+  "runtime": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "numpy": "2.4.1",
+    "matplotlib": "3.10.8",
+    "command": "python -B study_2026-10-08/analysis.py"
+  },
+  "final_run_policy": "Run only after both phases are committed. All absent/failed outputs remain in planned denominators; final mode rejects unfinished jobs. Partial diagnostics require explicit flag and separate subdirectory.",
+  "final_output_files": [
+    "summary.json",
+    "per_prediction.json",
+    "per_prediction.csv",
+    "per_item.json",
+    "per_item.csv",
+    "jobs.json",
+    "jobs.csv",
+    "baseline_items.json",
+    "baseline_items.csv",
+    "paper_results.tex",
+    "paper_macros.tex"
+  ],
+  "figures": {
+    "main_joint_comparison": "9.2 x 4.7 inches; use two-column width",
+    "paired_gains_intervals": "10.0 x 3.3 inches; use two-column width",
+    "stress_vs_feature_agreement": "9.4 x 4.4 inches; use two-column width",
+    "verifier_reference_diagnostics": "8.0 x 4.2 inches; use two-column width or re-layout before narrow inclusion"
+  },
+  "figure_formats": [
+    "pdf",
+    "png"
+  ],
+  "macro_pattern": "Study{Astra|Sol|Luna}{S|C|E|R|V|W}{Joint|Stress|FeatureExact|CoreJoint}; legacy40 S macros insert Legacy before metric, e.g. StudyAstraSLegacyJoint. Numeric percentages without percent sign."
+}

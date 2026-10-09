@@ -1,0 +1,4 @@
+{"pair_id": "synthetic-001", "status": "ok", "rhyme": "yes", "rhyme_type": "M", "features": ["PURE"]}
+{"pair_id": "synthetic-002", "status": "abstain", "rhyme": "uncertain", "rhyme_type": null, "features": []}
+{"pair_id": "synthetic-003", "status": "ok", "rhyme": "no", "rhyme_type": null, "features": []}
+{"pair_id": "synthetic-004", "status": "ok", "rhyme": "uncertain", "rhyme_type": null, "features": []}

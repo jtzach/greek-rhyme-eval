@@ -1,0 +1,95 @@
+[
+  {
+    "pair_id": "synthetic-001",
+    "language": "und",
+    "source_id": "synthetic-plumbing",
+    "poem_id": "placeholder-poem-1",
+    "split": "dev",
+    "lines": [
+      "Placeholder line A for record 1.",
+      "Placeholder line B for record 1."
+    ],
+    "label": {
+      "rhyme": "yes",
+      "rhyme_type": "M",
+      "features": [
+        "PURE"
+      ]
+    },
+    "annotation": {
+      "status": "synthetic",
+      "annotator_ids": [],
+      "adjudicator_id": null
+    },
+    "notes": "Arbitrary labels for software plumbing only. These lines do not demonstrate the assigned rhyme labels."
+  },
+  {
+    "pair_id": "synthetic-002",
+    "language": "und",
+    "source_id": "synthetic-plumbing",
+    "poem_id": "placeholder-poem-2",
+    "split": "dev",
+    "lines": [
+      "Placeholder line A for record 2.",
+      "Placeholder line B for record 2."
+    ],
+    "label": {
+      "rhyme": "yes",
+      "rhyme_type": "F2",
+      "features": [
+        "RICH",
+        "IDV"
+      ]
+    },
+    "annotation": {
+      "status": "synthetic",
+      "annotator_ids": [],
+      "adjudicator_id": null
+    },
+    "notes": "Arbitrary labels for software plumbing only. These lines do not demonstrate the assigned rhyme labels."
+  },
+  {
+    "pair_id": "synthetic-003",
+    "language": "und",
+    "source_id": "synthetic-plumbing",
+    "poem_id": "placeholder-poem-3",
+    "split": "dev",
+    "lines": [
+      "Placeholder line A for record 3.",
+      "Placeholder line B for record 3."
+    ],
+    "label": {
+      "rhyme": "no",
+      "rhyme_type": null,
+      "features": []
+    },
+    "annotation": {
+      "status": "synthetic",
+      "annotator_ids": [],
+      "adjudicator_id": null
+    },
+    "notes": "Arbitrary labels for software plumbing only. These lines do not demonstrate the assigned rhyme labels."
+  },
+  {
+    "pair_id": "synthetic-004",
+    "language": "und",
+    "source_id": "synthetic-plumbing",
+    "poem_id": "placeholder-poem-4",
+    "split": "dev",
+    "lines": [
+      "Placeholder line A for record 4.",
+      "Placeholder line B for record 4."
+    ],
+    "label": {
+      "rhyme": "uncertain",
+      "rhyme_type": null,
+      "features": []
+    },
+    "annotation": {
+      "status": "synthetic",
+      "annotator_ids": [],
+      "adjudicator_id": null
+    },
+    "notes": "Arbitrary labels for software plumbing only. These lines do not demonstrate the assigned rhyme labels."
+  }
+]

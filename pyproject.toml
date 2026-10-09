@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "greek-rhyme-eval"
+version = "0.1.0"
+description = "Greek rhyme automatic-reference evaluation: code and public numerical replay"
+requires-python = ">=3.11"
+dependencies = ["numpy==2.4.1"]
+
+[project.optional-dependencies]
+figures = ["matplotlib==3.10.8"]
+extraction = ["pypdf", "pdfplumber", "fonttools"]
+
+[project.scripts]
+rhyme-bench = "rhyme_bench.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

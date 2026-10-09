@@ -1,0 +1,110 @@
+{
+  "status": "frozen",
+  "seed": 20261008,
+  "source_commit": "8ee1773d51133213a87b800ef049ad6e2800f7cd",
+  "splits": {
+    "main300": {
+      "n": 300,
+      "per_position": 100,
+      "role": "primary held-out evaluation"
+    },
+    "examples60": {
+      "n": 60,
+      "per_position": 20,
+      "role": "separate labeled context example pool"
+    },
+    "legacy40": {
+      "n": 40,
+      "subsets": {
+        "golden": 26,
+        "complementary": 14
+      },
+      "role": "separate historical benchmark; excluded from new sampling"
+    }
+  },
+  "canonical_positions": [
+    "M",
+    "F2",
+    "F3"
+  ],
+  "canonical_features": [
+    "COPY",
+    "IDV",
+    "IMPERFECT",
+    "MOSAIC",
+    "PURE",
+    "RICH"
+  ],
+  "feature_token_mapping": {
+    "PURE": "PURE",
+    "RICH": "RICH",
+    "TR": "RICH",
+    "PR": "RICH",
+    "IMP": "IMPERFECT",
+    "IMPERFECT": "IMPERFECT",
+    "IDV": "IDV",
+    "MOS": "MOSAIC",
+    "MOSAIC": "MOSAIC",
+    "COPY": "COPY"
+  },
+  "subtype_tokens_not_primary_features": [
+    "0",
+    "0F",
+    "0M",
+    "2W",
+    "C",
+    "C1",
+    "C2",
+    "CC",
+    "CC1",
+    "CC2",
+    "S",
+    "V"
+  ],
+  "canonicalization": "Map recognized literal tokens to broad features, deduplicate/sort, retain source convention. Do not infer PURE. PURE/RICH co-occurrence rejected. Literal classification, literal feature pieces and subtype codes retained.",
+  "deduplication": {
+    "normalization": "casefold -> Unicode NFD -> remove combining marks -> replace nonword/nonwhitespace with spaces -> collapse whitespace; sort two normalized lines for unordered key",
+    "near_match": "Either alignment has both normalized line SequenceMatcher(autojunk=False).ratio >=0.92; exact normalized lines match directly",
+    "threshold": 0.92,
+    "blocked_sets": [
+      "legacy40",
+      "earlier100pilot"
+    ],
+    "within_and_between_new_splits": true,
+    "selection": "Normalize/deduplicate corpus in source order; exclude conflicting literal-label keys. For M,F2,F3, shuffle remaining class candidates with one Random(seed), greedily accept120 passing exclusions, first100 main/next20 examples; shuffle main then examples with same RNG.",
+    "scope_limit": "Text-pair near duplication only; different verses with the same rhyme endings may remain. No reliable poem identifiers, so poem-level disjointness cannot be established."
+  },
+  "model_input_schema": {
+    "id": "opaque sequential ID after shuffle",
+    "lines": "two original strings",
+    "text": "lines joined by newline"
+  },
+  "manifest_schema": {
+    "id": "input ID",
+    "input_file": "relative path to split input JSON array",
+    "input_index": "zero-based index"
+  },
+  "reference_schema": {
+    "reference": "{position,features}",
+    "classification": "literal source pattern",
+    "literal_features": "literal hyphen pieces (legacy supplied list preserved)",
+    "subtype_codes": "retained IMP/TR/PR/IDV subtype strings",
+    "provenance": "source group, original zero-based row index and available metadata; no invented poem IDs"
+  },
+  "paths": {
+    "main_inputs": "data/inputs/main300.json",
+    "main_references": "data/references/main300.json",
+    "legacy_inputs": "data/inputs/legacy40.json",
+    "legacy_references": "data/references/legacy40.json",
+    "example_bank": "data/examples/context_bank60.json",
+    "metadata": "data/selection_metadata.json"
+  },
+  "limitations": [
+    "Reference labels are automatic and may be wrong.",
+    "No validated negative class.",
+    "Author codes retained literally; no author-name decoding inferred.",
+    "Some source grouping uses top-level poet field; no poem-level grouping available.",
+    "Legacy grouping recovered only through unambiguous normalized-pair match to source metadata; otherwise missing.",
+    "Legacy text line breaks are restored only from unique literal space-slash-space separator."
+  ]
+}

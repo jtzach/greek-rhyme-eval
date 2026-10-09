@@ -1,0 +1,17 @@
+* text=auto
+*.py -text
+# These files preserve the original study's exact byte/hash contract.
+study_2026-10-08/analysis.py -text
+study_2026-10-08/runner.py -text
+study_2026-10-08/prepare_experiments.py -text
+study_2026-10-08/preparation/*.py -text
+study_2026-10-08/verifier/*.py -text
+tests/test_study_analysis_2026.py -text
+tests/test_study_runner_2026.py -text
+tests/test_rhyme_bench.py -text
+tests_private/*.py -text
+src/rhyme_bench/*.py -text
+provenance/*.json -text
+results/*.json -text
+data/examples/* -text
+study_2026-10-08/data_contract.json -text

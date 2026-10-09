@@ -1,0 +1,136 @@
+{
+  "scope": "Only listed original files are copied; the release is a sanitized derivative, not the full frozen experiment.",
+  "files": [
+    {
+      "path": "study_2026-10-08/analysis.py",
+      "sha256": "c839c7e9cfefc3f443441f041ee6b8169956e70b97adbe24b02a6b63dea07ba6",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/runner.py",
+      "sha256": "acb994fc14a8d8d3c79f5fdd9d475459b12fa30822184133265fcf07ee178a6d",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/prepare_experiments.py",
+      "sha256": "84dfb0de6ca9c30b36203d03b226973d76ddac32b1cf6558cf022e9706789800",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/data_contract.json",
+      "sha256": "2915a37ca7d9ccce9a7ece14bc3357381fd18e18344418dd772471b5d8ed5c6d",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/preparation/prepare_dataset.py",
+      "sha256": "1ccba1db756bf7b27998404010f4c82b229b36c503d6ce9310c4e5e1c0f2bb08",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/preparation/validate_dataset.py",
+      "sha256": "ba20143d999fe02bf22b754739271b7335ced44ef6b9e71db1d8b0e26edefd15",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/preparation/freeze_dataset.py",
+      "sha256": "b5b705f0f956110087c2634adf576144814eed53737bf62b440e717ba10b4371",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/verifier/adapter.py",
+      "sha256": "0be4d36b828ffc44c51ae4a14af700b0c56a7aa7845db1ecc545396a5faf0121",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "study_2026-10-08/verifier/__init__.py",
+      "sha256": "4f8d052e636040022429dd8f7ec54aaadfdf585af11ef2afaaf07e379b72f821",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "tests/test_rhyme_bench.py",
+      "sha256": "1212cd243d4fc5e629e7803bf0b92864d40c9b21ac14df1e21c6be5c231b2a60",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "tests/test_study_analysis_2026.py",
+      "sha256": "d5792b480e8e624a5c4fdfced5d8671ff2766f98da035bc5943039a58e43d9a9",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "tests/test_study_runner_2026.py",
+      "sha256": "410c5a10a5342a0405bb463133e649af31908af8b370b6ccaa09fd8f24b4f1d4",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "data/examples/synthetic_reference.json",
+      "sha256": "7dc1bd140f9cb5d941afae34db6f5503296ffb31440e15d88538b85d33f784c3",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "data/examples/synthetic_predictions.jsonl",
+      "sha256": "4984ad9a8468a8ca5439734fc953f14ea68fb182920bafddba0c427b0e65d34f",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "src/rhyme_bench/cli.py",
+      "sha256": "9fde1de78c16bf52f7bb9aab4719cd847717ea32b9451eea4f2ad5ef02b4a9ae",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "src/rhyme_bench/contracts.py",
+      "sha256": "f60d93d23120d0107ca67fdb9c9a2b7836d1e1b9f46674204374728d989b9ed4",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "src/rhyme_bench/scoring.py",
+      "sha256": "d36f30df2d0b1daa1d8d9feea737bea13fc7f433e1f6f7b78ed755a91dedad55",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "src/rhyme_bench/__init__.py",
+      "sha256": "6e2a613e90184add7904df38428bc797d1adfabbbd66f1e308fb19abfdb9448a",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "src/rhyme_bench/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "relationship": "byte-identical original study/library source or synthetic fixture"
+    },
+    {
+      "path": "tests_private/test_verifier_repair_2026.py",
+      "sha256": "a8e9b24b684e31d280f2647e3bab81d652a51d47caca911051dde3a9ac1c5f1c",
+      "original_relative_path": "tests/test_verifier_repair_2026.py",
+      "relationship": "byte-identical; moved outside default public test discovery"
+    },
+    {
+      "path": "study_2026-10-08/context/extract_topintzi.py",
+      "sha256": "139568dedec69b43be882f373d8fa61860dc8b009d846904f27acbacb463e4e0",
+      "original_sha256": "dc4ab1fd6eed70640f651d18d7760c446d13b4d8f9e735b0d26be2fc65f9f54d",
+      "relationship": "portable derivative; removed private dependency-path fallback; extraction logic unchanged"
+    },
+    {
+      "path": "provenance/protocol_frozen.json",
+      "sha256": "27cd61a90975048b0f7afbdf39fc08dc8c46e88ab5ca1ded931046cb1493d00e",
+      "original_relative_path": "study_2026-10-08/protocol_frozen.json",
+      "relationship": "historical byte-identical provenance record, not a declaration that private dependencies are bundled"
+    },
+    {
+      "path": "provenance/data_freeze.json",
+      "sha256": "3b5454bdd2958825fe2ba5be99126c051eb8bd2531e1b07001d0e11213e3b0db",
+      "original_relative_path": "study_2026-10-08/data/freeze.json",
+      "relationship": "historical byte-identical provenance record, not a declaration that private dependencies are bundled"
+    },
+    {
+      "path": "provenance/analysis_implementation_freeze.json",
+      "sha256": "f1b4d0b3031d1e9a99f14625f4ddb094b92bcedcbb8d1bc990af707805f8961a",
+      "original_relative_path": "study_2026-10-08/analysis/implementation_freeze.json",
+      "relationship": "historical byte-identical provenance record, not a declaration that private dependencies are bundled"
+    },
+    {
+      "path": "provenance/repair_provenance.json",
+      "sha256": "e8c849e890e9d9eeb38a654fef6295e92bc225981761b330a33e657b27e59d3d",
+      "original_relative_path": "study_2026-10-08/verifier/repair_provenance.json",
+      "relationship": "historical byte-identical provenance record, not a declaration that private dependencies are bundled"
+    }
+  ]
+}

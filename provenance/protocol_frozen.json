@@ -1,0 +1,93 @@
+{
+  "frozen_utc": "2026-10-08T21:14:10.285302+00:00",
+  "status": "frozen before main experimental inference; synthetic access checks and prior diagnostic pilots already existed",
+  "models": {
+    "astra": "gpt-6-astra",
+    "sol": "gpt-6.1-sol",
+    "luna": "gpt-6-luna"
+  },
+  "model_identity_caveat": "requested serving aliases; immutable backend snapshot not independently attested",
+  "reasoning_effort": "high",
+  "replicates": 2,
+  "batch_size": 10,
+  "main_pairs": 300,
+  "legacy_pairs": 40,
+  "conditions": {
+    "S": "Common compact taxonomy only, one call",
+    "C": "S plus the complete extracted Topintzi et al. 2019 document, one call",
+    "E": "S plus 15 seeded demonstrations from separate60 pool (5 per position), one call",
+    "R": "Shared S output plus self-revision instruction, one further call",
+    "V": "Shared S output plus frozen original verifier feedback, one further call",
+    "W": "Shared S output plus isolated repaired verifier feedback, one further call"
+  },
+  "unit": "pair; ten pairs per fresh independent session; same ordering and batches in all conditions",
+  "legacy_design": "S only, all three models and two replicates; separate from main300 and literal historical-prompt26 diagnostic",
+  "counts": {
+    "initial_calls": 564,
+    "revision_calls": 540,
+    "total_planned_calls": 1104,
+    "main_prediction_records": 10800,
+    "legacy_prediction_records": 240
+  },
+  "replication": "independent sessions; service defaults for temperature, no exposed inference seed; repeat pairing shares input batches",
+  "primary_metric": "joint exact agreement of stress position and unordered canonical feature set with stored automatic reference",
+  "secondary_metrics": [
+    "stress agreement",
+    "feature set exact agreement",
+    "feature micro F1",
+    "per-item feature F1",
+    "per-position joint agreement",
+    "core joint agreement excluding COPY and MOSAIC in both prediction and reference",
+    "invalid rate",
+    "token usage",
+    "latency"
+  ],
+  "denominators": "All planned predictions retained; absent, malformed or tool-using outputs are joint/type/exact errors. Feature micro misses count all reference features as FN.",
+  "empty_features": "Per-item F1=1 for two empty sets,0 for empty/nonempty; invalid output F1=0 even if reference empty.",
+  "statistics": {
+    "bootstrap_seed": 20261008,
+    "resamples": 10000,
+    "primary_uncertainty": "paired cluster bootstrap over fixed10-pair inference batches; average two replicates within item; resample30batches",
+    "sensitivity": "resample observed author/source groups, with all pairs of a group kept together; report few-group limitation",
+    "comparisons": [
+      "C-S",
+      "E-S",
+      "R-S",
+      "V-R",
+      "W-V"
+    ],
+    "multiplicity": "descriptive paired95percentile intervals; no unadjusted significance declarations",
+    "replicate_stability": "per model/condition exact label-set consistency across two repeats"
+  },
+  "retry_policy": "At most2 transport attempts; never retry completed malformed answers, tool-use, or low-scoring answers.",
+  "revision_failure_policy": "No valid S inference means dependent R/V/W prediction errors for whole batch; do not replace S.",
+  "scope": [
+    "ModernGreek only",
+    "positive automatic-reference pool, not rhyme detection",
+    "balancedstress sample is not corpus prevalence",
+    "no human truth claim",
+    "verifier feedback is related to the label-producing system, so agreement gains are not independent accuracy gains",
+    "source corpus systematically omits some COPY/MOSAIC features emitted by live verifier; full-set primary is literal stored-label agreement; core joint metric is a prespecified sensitivity analysis",
+    "no poem identifiers, only pair duplicate filtering",
+    "full context condition is text extraction with documented source recovery",
+    "three models from one provider family; not cross-provider evidence",
+    "no dollar cost inferred from Codex subscription usage"
+  ],
+  "hashes": {
+    "data/freeze.json": "3b5454bdd2958825fe2ba5be99126c051eb8bd2531e1b07001d0e11213e3b0db",
+    "data_contract.json": "2915a37ca7d9ccce9a7ece14bc3357381fd18e18344418dd772471b5d8ed5c6d",
+    "context/topintzi_etal_2019_context.txt": "917b8adbd148f5c800231ca2fd503275249e139f80d59f8ef688fb6dfb609a4b",
+    "prepare_experiments.py": "84dfb0de6ca9c30b36203d03b226973d76ddac32b1cf6558cf022e9706789800",
+    "runner.py": "acb994fc14a8d8d3c79f5fdd9d475459b12fa30822184133265fcf07ee178a6d",
+    "design/example_draws.json": "97ae3541a4dfe006861aa602180c57c03735e7e6112b16bceddddaa7f1d7a5b7",
+    "design/verifier_analyses.json": "6fe57cc40f3a160025b59af0466e2a1b8c8fc2c3ad07bf21979fa1ee5eeea2d4",
+    "design/revision_plan.json": "999154f61c8c1457d315092703a2e5c3f7c227a44ac84e68a8ceabaf6c8ea00b",
+    "manifests/phase1.json": "5aab9a8f2d458a62d2a4777be87e2373c9a4916c0638476a9e664bd66e5bde50",
+    "verifier/adapter.py": "0be4d36b828ffc44c51ae4a14af700b0c56a7aa7845db1ecc545396a5faf0121",
+    "verifier/build_repair.py": "ccbecef4471ec80e7e42c26160c4cdc2f62c9f4c1998e7e4e546b268b0b7dc72",
+    "verifier/__init__.py": "4f8d052e636040022429dd8f7ec54aaadfdf585af11ef2afaaf07e379b72f821",
+    "verifier/repaired/greek_phonology.py": "5447296ca468090c09b897ac8ed4e629997a515a802d4bd80f508e4baf9adaa4",
+    "verifier/repaired/verification_utils.py": "b4653ac91e84be9446ba5d6e176d4ab9f4cc70ff7c9e49e6d34171a52ec3ec30",
+    "verifier/repaired/__init__.py": "739cb1b585f4b5215b9af565af6e528653c488d297ef9fcf992d0bb404a5ceec"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "frozen_utc": "2026-10-08T21:11:12.167875+00:00",
+  "approved_seed": 20261008,
+  "source_commit": "8ee1773d51133213a87b800ef049ad6e2800f7cd",
+  "scope": "Dataset selection, references, example bank, label-free manifests, contract and preparation code; independent of inference/scoring freeze.",
+  "selection_without_model_output_access": true,
+  "files_sha256": {
+    "data/examples/context_bank60.json": "372883326f1c7d31b32b220eb214c2649126bbe2f8bad79d3ab4631144b15f9e",
+    "data/inputs/examples60.json": "5e6e837b94902afd7ba22d57cf73583772e881a934770360f2ab2b5528dc7870",
+    "data/inputs/legacy40.json": "0a802383d5f02bca56cb1ddeb32bdff4c14d35a22b496e27687ea395a66047c0",
+    "data/inputs/main300.json": "ff8567d986d428a1607b44e06601b85bd5a55f424b627cdcf7e10c600d5fe238",
+    "data/manifests/examples60.json": "fbe40b6a7a36118aa18c13665b19df0921de4074d462c06aa4c259e8ffaa8186",
+    "data/manifests/legacy40.json": "cdd5082897f21b8984e5d9fc6c587fa65b8e7019e31009bd21a795c8477c2c44",
+    "data/manifests/main300.json": "9863e3f67cef4013596dc82be4c5f5f57444e7894d52019d6bdc9e90e7c8a5b2",
+    "data/references/examples60.json": "b8fb5c3cc80edd037aedb1dc845367ee6a6f57132e3fd3e6a2c42561820ba455",
+    "data/references/legacy40.json": "9f39fc43fba2e7ebaade7726da2b708a26c209cd3da10b03ad757961c9df8a81",
+    "data/references/main300.json": "b0f0950bce190244a9edb9fbac99fcc52e37cd9372173bd781ddc0fb23d5e16f",
+    "data/selection_metadata.json": "6698174d77c62fb464b8161f6e383aa95b973910970835e2af33b6a20704c996",
+    "data_contract.json": "2915a37ca7d9ccce9a7ece14bc3357381fd18e18344418dd772471b5d8ed5c6d",
+    "preparation/freeze_dataset.py": "b5b705f0f956110087c2634adf576144814eed53737bf62b440e717ba10b4371",
+    "preparation/prepare_dataset.py": "1ccba1db756bf7b27998404010f4c82b229b36c503d6ce9310c4e5e1c0f2bb08",
+    "preparation/validate_dataset.py": "ba20143d999fe02bf22b754739271b7335ced44ef6b9e71db1d8b0e26edefd15",
+    "preparation/validation.json": "09e59b2d0f165f89228e2d762c1db5b080eb9b6db94b6f74e6032d34dcc7ca96"
+  }
+}

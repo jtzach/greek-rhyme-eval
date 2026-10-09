@@ -1,0 +1,30 @@
+{
+  "release_kind": "public code and label-only numerical replay; not full private-evidence replay",
+  "study_date": "2026-10-08",
+  "analysis_completed_date": "2026-10-09",
+  "original_analysis_sha256": "c839c7e9cfefc3f443441f041ee6b8169956e70b97adbe24b02a6b63dea07ba6",
+  "original_summary_sha256": "5dba8a07c1d044e77da4ec8c8dc67bba921ba4431bbd0bd324e691b93e61e642",
+  "original_protocol_sha256": "27cd61a90975048b0f7afbdf39fc08dc8c46e88ab5ca1ded931046cb1493d00e",
+  "sanitization": [
+    "Explicit source-file whitelist; no upstream code/corpus, repaired modules, repair patch, raw prompt/response/event files or manuscript.",
+    "Per-prediction response hashes removed. Original IDs, batch IDs, row order, labels and numerical outcomes retained.",
+    "Source/author group strings replaced with opaque group_NNN codes in original lexicographic order; membership and seeded bootstrap ordering unchanged; mapping not published.",
+    "Historical diagnostic local path, generation timestamp and raw-evidence metadata excluded from public summary.",
+    "Job-level records contain design IDs and aggregate attempt usage/latency only, without CLI commands, session IDs or local paths."
+  ],
+  "groups": 11,
+  "main_group_count": 11,
+  "preserved_counts": {
+    "prediction_records": 11040,
+    "item_condition_records": 5520,
+    "main_prediction_records": 10800,
+    "legacy_prediction_records": 240
+  },
+  "rights": "See RIGHTS.md. Published label/aggregate observations do not redistribute underlying poems or theoretical prose.",
+  "not_attested": [
+    "Remote immutable model weights",
+    "human linguistic correctness",
+    "omitted raw-event/prompt provenance",
+    "author approval or conference submission"
+  ]
+}

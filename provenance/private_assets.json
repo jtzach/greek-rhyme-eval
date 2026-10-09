@@ -1,0 +1,41 @@
+{
+  "upstream_url": "https://github.com/StergiosCha/Greek_Rhyme",
+  "upstream_commit": "8ee1773d51133213a87b800ef049ad6e2800f7cd",
+  "license_note": "No upstream redistribution license established; no upstream source or corpus is vendored.",
+  "theory_publication_url": "https://ntopintzi.wixsite.com/webpage/copy-of-research",
+  "theory_pdf_url": "https://6de845ea-06be-469b-9236-f3603535b5ff.filesusr.com/ugd/92e5a2_fc42605cbc6e4378822aeaf2310721a3.pdf",
+  "assets": {
+    "repository_review_2026-09-29/data/complete_corpus_enhanced.json": {
+      "sha256": "9af7815fe35fda551cccd441d2b1c0436a2fb7e42b9bd6926c2b694870b85bd5",
+      "kind": "separately acquired pinned upstream asset"
+    },
+    "evaluation/gold/labels.json": {
+      "sha256": "a2e47cc72f2794002de53e5a20785e30c3fe18ae0320fb1909d0ad86dd93b924",
+      "kind": "private pilot exclusion data"
+    },
+    "repository_review_2026-09-29/reproduction/identification/golden_test_set.json": {
+      "sha256": "7dc29eab7ee2a5c938e2eabef906ab93892207d793d41b4cb5f131da8824778a",
+      "kind": "separately acquired pinned upstream asset"
+    },
+    "repository_review_2026-09-29/reproduction/identification/complementary_test_set.json": {
+      "sha256": "28ea504d094eb90aa8bfd639569a53db86e0dd69804b0dfb4d1cff2cf3f1bb11",
+      "kind": "separately acquired pinned upstream asset"
+    },
+    "repository_review_2026-09-29/src/greek_phonology.py": {
+      "sha256": "cc3128110daff37959943dae20295756173754f1d028881f0a64d9df783f92ac",
+      "kind": "separately acquired pinned upstream code"
+    },
+    "repository_review_2026-09-29/src/verification_utils.py": {
+      "sha256": "6e245e2607ea6b5196a60db9ebeb95553cf721a3f837222207511d25d2e1a052",
+      "kind": "separately acquired pinned upstream code"
+    },
+    "study_2026-10-08/context/topintzi_etal_2019_author.pdf": {
+      "sha256": "91f4730af583341a699dc2ea13c998a907cb334402ae102990adbcb4aa41c496",
+      "kind": "separately acquired theory source"
+    },
+    "study_2026-10-08/context/topintzi_etal_2019_context.txt": {
+      "sha256": "917b8adbd148f5c800231ca2fd503275249e139f80d59f8ef688fb6dfb609a4b",
+      "kind": "locally recovered complete theory text"
+    }
+  }
+}

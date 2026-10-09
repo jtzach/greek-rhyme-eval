@@ -1,0 +1,40 @@
+{
+  "version": "engineering-repair-2026-10-08-v1",
+  "date": "2026-10-08",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "high",
+  "model_identity_note": "Requested model recorded from delegation; runtime weights cannot be independently attested.",
+  "upstream_commit": "8ee1773d51133213a87b800ef049ad6e2800f7cd",
+  "frozen_source": "repository_review_2026-09-29\\src",
+  "hashes": {
+    "greek_phonology.py": {
+      "original_sha256": "cc3128110daff37959943dae20295756173754f1d028881f0a64d9df783f92ac",
+      "repaired_sha256": "5447296ca468090c09b897ac8ed4e629997a515a802d4bd80f508e4baf9adaa4"
+    },
+    "verification_utils.py": {
+      "original_sha256": "6e245e2607ea6b5196a60db9ebeb95553cf721a3f837222207511d25d2e1a052",
+      "repaired_sha256": "b4653ac91e84be9446ba5d6e176d4ab9f4cc70ff7c9e49e6d34171a52ec3ec30"
+    }
+  },
+  "changes": [
+    {
+      "id": "ascii_x_feature_lookup",
+      "change": "Add X alias with the existing x place/manner features; retain x compatibility."
+    },
+    {
+      "id": "consonant_digraph_tokenization",
+      "change": "Share offset-preserving tokenization between display G2P and rhyme extraction; adopt existing G2P digraph policy at all positions; convert each symbol of multi-symbol sounds to ASCII."
+    },
+    {
+      "id": "imperfect_subtype_adapter",
+      "change": "Read structured imperfect_type in repaired feedback; retain unspecified IMP-0 rather than invent final/medial status."
+    }
+  ],
+  "scope_limitations": [
+    "Engineering consistency only; not proven human phonological accuracy.",
+    "Existing stress, synizesis, consonant compatibility, mosaic and IDV policies are unchanged.",
+    "No general pronunciation, allophony, syllabification or rhyme-theory redesign.",
+    "Neither supplied labels nor newly generated model outputs were consulted to select or tune repairs."
+  ],
+  "validation_basis": "Synthetic representation/interface invariants independent of corpus labels."
+}
