@@ -1,0 +1,374 @@
+{
+  "models": {
+    "claude_sonnet55": "anthropic/claude-sonnet-5.5",
+    "claude_haiku55": "anthropic/claude-haiku-5.5",
+    "gemini38_flash": "google/gemini-3.8-flash",
+    "deepseek41_flash": "deepseek/deepseek-v4.1-flash",
+    "qwen38_flash": "qwen/qwen3.8-flash",
+    "mistral_large4": "mistralai/mistral-large-4-0",
+    "llama4_maverick": "meta-llama/llama-4-maverick",
+    "glm53_flash": "z-ai/glm-5.3-flash"
+  },
+  "model_settings": {
+    "anthropic/claude-sonnet-5.5": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "anthropic"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 2.0,
+          "completion": 10.0
+        },
+        "ignore": [
+          "amazon-bedrock",
+          "azure/global",
+          "azure/us",
+          "claude-on-aws",
+          "google-vertex/europe",
+          "google-vertex/global",
+          "google-vertex/us"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001"
+      }
+    },
+    "anthropic/claude-haiku-5.5": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "anthropic"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.1,
+          "completion": 0.5
+        },
+        "ignore": [
+          "amazon-bedrock",
+          "amazon-bedrock/eu-west-1",
+          "amazon-bedrock/us-east-1",
+          "azure/global",
+          "azure/us",
+          "claude-on-aws",
+          "google-vertex/europe",
+          "google-vertex/global",
+          "google-vertex/us"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005"
+      }
+    },
+    "google/gemini-3.8-flash": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "google-ai-studio"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.75,
+          "completion": 3.75
+        },
+        "ignore": [
+          "google-ai-studio/flex",
+          "google-ai-studio/priority",
+          "google-vertex/global",
+          "google-vertex/global/flex",
+          "google-vertex/global/priority"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.00000075",
+        "completion": "0.00000375"
+      }
+    },
+    "deepseek/deepseek-v4.1-flash": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "deepinfra/fp8"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.14,
+          "completion": 0.42
+        },
+        "ignore": [
+          "alibaba",
+          "atlas-cloud/fp8",
+          "baidu/fp8",
+          "baseten/fast",
+          "baseten/fp8",
+          "coreweave/fp8",
+          "crusoe/fp8",
+          "decart/fp4",
+          "deepseek",
+          "dekallm",
+          "digitalocean",
+          "fireworks",
+          "fireworks/us",
+          "gmicloud/fp8",
+          "inference-net/fp8",
+          "ionstream",
+          "makora/fp8",
+          "modal",
+          "morph/fp8",
+          "novita/fp8",
+          "open-inference/fp4",
+          "parasail/fp8",
+          "phala",
+          "relace",
+          "sail-research/fp4",
+          "siliconflow/fp8",
+          "streamlake/fp8",
+          "together",
+          "venice/fp8",
+          "wafer"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.00000014",
+        "completion": "0.00000042"
+      }
+    },
+    "qwen/qwen3.8-flash": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "max_tokens": 4096
+      },
+      "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "alibaba"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.15,
+          "completion": 0.47
+        },
+        "ignore": [
+          "alibaba/us-east-1"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.00000047"
+      }
+    },
+    "mistralai/mistral-large-4-0": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "mistral"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.68,
+          "completion": 2.09
+        },
+        "ignore": [
+          "mistral/eu",
+          "mistral/zdr"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.00000068",
+        "completion": "0.00000209"
+      }
+    },
+    "meta-llama/llama-4-maverick": {
+      "max_tokens": 8192,
+      "reasoning": null,
+      "reasoning_policy": "unsupported",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "digitalocean"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.1875,
+          "completion": 0.6525
+        },
+        "ignore": [
+          "google-vertex/us-east5",
+          "novita/fp8",
+          "parasail/fp8"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.0000001875",
+        "completion": "0.0000006525"
+      }
+    },
+    "z-ai/glm-5.3-flash": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+      "response_format": "json_schema",
+      "provider": {
+        "only": [
+          "fireworks"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "max_price": {
+          "prompt": 0.15,
+          "completion": 0.5
+        },
+        "ignore": [
+          "atlas-cloud/fp8",
+          "baseten/fp8",
+          "coreweave/nvfp4",
+          "crusoe/fp4",
+          "decart/fp4",
+          "deepinfra/fp4",
+          "dekallm",
+          "digitalocean",
+          "fireworks/us",
+          "friendli",
+          "gmicloud/fp8",
+          "inceptron/fp8",
+          "inference-net/fp4",
+          "modal/nvfp4",
+          "morph/fp8",
+          "near-ai/fp8",
+          "novita/fp8",
+          "open-inference/fp4",
+          "parasail/fast",
+          "parasail/fp4",
+          "phala/nvfp4",
+          "reka",
+          "relace",
+          "sail-research/fp4",
+          "sail-research/us",
+          "siliconflow/fp8",
+          "streamlake/fp8",
+          "together",
+          "venice",
+          "wafer",
+          "z-ai/fp8"
+        ]
+      },
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000005"
+      }
+    }
+  },
+  "replicates": 2,
+  "batch_size": 10,
+  "main_pairs": 300,
+  "conditions": {
+    "S": "Common compact taxonomy only, one call",
+    "C": "S plus the complete extracted Topintzi et al. 2019 document, one call",
+    "E": "S plus 15 seeded demonstrations from separate60 pool (5 per position), one call",
+    "R": "Shared S output plus self-revision instruction, one further call",
+    "V": "Shared S output plus frozen original verifier feedback, one further call",
+    "W": "Shared S output plus isolated repaired verifier feedback, one further call"
+  },
+  "counts": {
+    "initial_calls": 1440,
+    "revision_calls": 1440,
+    "total_planned_calls": 2880,
+    "main_prediction_records": 28800,
+    "legacy_prediction_records": 0
+  },
+  "statistics": {
+    "bootstrap_seed": 20261008,
+    "resamples": 10000,
+    "primary_uncertainty": "paired cluster bootstrap over fixed10-pair inference batches; average two replicates within item; resample30batches",
+    "sensitivity": "resample observed author/source groups, with all pairs of a group kept together; report few-group limitation",
+    "comparisons": [
+      "C-S",
+      "E-S",
+      "R-S",
+      "V-R",
+      "W-V"
+    ],
+    "multiplicity": "descriptive paired95percentile intervals; no unadjusted significance declarations",
+    "replicate_stability": "per model/condition exact label-set consistency across two repeats"
+  },
+  "primary_metric": "joint exact agreement of stress position and unordered canonical feature set with stored automatic reference",
+  "secondary_metrics": [
+    "stress agreement",
+    "feature set exact agreement",
+    "feature micro F1",
+    "per-item feature F1",
+    "per-position joint agreement",
+    "core joint agreement excluding COPY and MOSAIC in both prediction and reference",
+    "invalid rate",
+    "token usage",
+    "latency"
+  ],
+  "denominators": "All planned predictions retained; absent, malformed or tool-using outputs are joint/type/exact errors. Feature micro misses count all reference features as FN.",
+  "empty_features": "Per-item F1=1 for two empty sets,0 for empty/nonempty; invalid output F1=0 even if reference empty.",
+  "revision_failure_policy": "No valid S inference means dependent R/V/W prediction errors for whole batch; do not replace S.",
+  "replication": "Two fresh independent requests per batch; same frozen batches and examples as original; no score-adaptive changes",
+  "ordering": "Original astra template order across replicate, batch, condition; panel declaration order inside each template slot",
+  "transport": "OpenRouter direct chat-completions API; exact model/provider/settings frozen per model",
+  "scope": [
+    "ModernGreek only",
+    "positive automatic-reference pool, not rhyme detection",
+    "balancedstress sample is not corpus prevalence",
+    "no human truth claim",
+    "verifier feedback is related to the label-producing system, so agreement gains are not independent accuracy gains",
+    "source corpus systematically omits some COPY/MOSAIC features emitted by live verifier; full-set primary is literal stored-label agreement; core joint metric is a prespecified sensitivity analysis",
+    "no poem identifiers, only pair duplicate filtering",
+    "full context condition is text extraction with documented source recovery",
+    "Original OpenAI-family results used Codex CLI; extension uses a direct API. Interface, serving and reasoning differences confound cross-model comparisons.",
+    "Exact request model IDs do not independently attest immutable model weights; provider/model metadata are retained.",
+    "Synthetic access checks may determine access/settings before this freeze; panel/labels/settings cannot change in response to main scores."
+  ],
+  "frozen_date_utc": "2026-10-10",
+  "release_transformation": "Public derivative: scientific design/settings retained; raw-evidence path/hash inventories and exact workflow timestamps omitted. Original artifact identity is in public_release.json."
+}

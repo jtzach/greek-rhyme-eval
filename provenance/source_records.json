@@ -131,6 +131,41 @@
       "sha256": "e8c849e890e9d9eeb38a654fef6295e92bc225981761b330a33e657b27e59d3d",
       "original_relative_path": "study_2026-10-08/verifier/repair_provenance.json",
       "relationship": "historical byte-identical provenance record, not a declaration that private dependencies are bundled"
+    },
+    {
+      "path": "extension_2026-10-10/analyze.py",
+      "sha256": "40173ded12bda748c3a493264614fb9467785ebfe9ceafa7cda9557d77330763",
+      "relationship": "Byte-identical frozen extension source; private-evidence CLI inputs are deliberately omitted"
+    },
+    {
+      "path": "extension_2026-10-10/prepare.py",
+      "sha256": "61691b6711f66aedc3d3def2c47be4183b65ca95c9e591bc49fbc90ff48cfcc4",
+      "relationship": "Byte-identical frozen extension source; private-evidence CLI inputs are deliberately omitted"
+    },
+    {
+      "path": "extension_2026-10-10/runner.py",
+      "sha256": "24d7a7a2f6f9b91f4855334fe3764b5929f744dbfb505af50dcb5d5440413ef9",
+      "relationship": "Byte-identical frozen extension source; private-evidence CLI inputs are deliberately omitted"
+    },
+    {
+      "path": "tools/replay_extension_results.py",
+      "sha256": "6d84270a80dc7b3baf8a651133cc466de2861aaf43ebbc4c3a71817aa533a956",
+      "relationship": "New public offline adapter or synthetic test; no model calls or private input access"
+    },
+    {
+      "path": "tests/test_public_extension_replay.py",
+      "sha256": "ba1d5455fca318d5c708712dff64b3bf391179971730ac8bd29dcac124a57f0f",
+      "relationship": "New public offline adapter or synthetic test; no model calls or private input access"
+    },
+    {
+      "path": "scripts/replay_repair_localization.py",
+      "sha256": "40f7f2010fc4f2e61173b0e0dbb86e2e64842239808c24d2ef1a4879a4312d85",
+      "relationship": "New public offline adapter or synthetic test; no model calls or private input access"
+    },
+    {
+      "path": "tests/test_public_repair_localization.py",
+      "sha256": "b478f95dacbccd3774e0bdbc0866be4b68c21d40c1644dc150fb5c3533bb1502",
+      "relationship": "New public offline adapter or synthetic test; no model calls or private input access"
     }
   ]
 }

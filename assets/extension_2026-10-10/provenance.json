@@ -1,0 +1,153 @@
+{
+  "scope": "Numeric figures from final summaries; source paths and workflow timestamps omitted",
+  "source_provenance_sha256": "a7342478bda1d555913eba0c69c1b58177c0dda27ef79856da24e1fec7192da2",
+  "script_sha256": "c00e3e25cf5b45d368ae79f3c861360a369203059dcc70b0ba75bceab21f0438",
+  "input_hashes": {
+    "summary": "52e6c891d0274b25c498a3ce1328596113776e14000170a94fc1ca4db4d98ff4",
+    "comparison": "c09268508775f145ed5186dd011a3c45fd24fe08561714c2b74a39a5eff5e240",
+    "original_summary": "5dba8a07c1d044e77da4ec8c8dc67bba921ba4431bbd0bd324e691b93e61e642",
+    "protocol": "d4c9355747c040f746649102b8e25e5fd3a96861db1c2db00e79e5d7abe5b915"
+  },
+  "png_dpi": 360,
+  "model_order": [
+    {
+      "key": "claude_sonnet55",
+      "id": "anthropic/claude-sonnet-5.5",
+      "label": "Claude Sonnet 5.5"
+    },
+    {
+      "key": "claude_haiku55",
+      "id": "anthropic/claude-haiku-5.5",
+      "label": "Claude Haiku 5.5"
+    },
+    {
+      "key": "gemini38_flash",
+      "id": "google/gemini-3.8-flash",
+      "label": "Gemini 3.8 Flash"
+    },
+    {
+      "key": "deepseek41_flash",
+      "id": "deepseek/deepseek-v4.1-flash",
+      "label": "DeepSeek V4.1 Flash"
+    },
+    {
+      "key": "qwen38_flash",
+      "id": "qwen/qwen3.8-flash",
+      "label": "Qwen 3.8 Flash"
+    },
+    {
+      "key": "mistral_large4",
+      "id": "mistralai/mistral-large-4-0",
+      "label": "Mistral Large 4"
+    },
+    {
+      "key": "llama4_maverick",
+      "id": "meta-llama/llama-4-maverick",
+      "label": "Llama 4 Maverick"
+    },
+    {
+      "key": "glm53_flash",
+      "id": "z-ai/glm-5.3-flash",
+      "label": "GLM 5.3 Flash"
+    }
+  ],
+  "cost_plot": {
+    "generated": true,
+    "aggregation": "Mean joint over six conditions; sum incremental API-reported costs without duplicating shared S",
+    "included": [
+      {
+        "model": "claude_haiku55",
+        "number": 2,
+        "color": "#D55E00",
+        "cost_usd": 1.1698952,
+        "mean_joint": 0.26833333333333337
+      },
+      {
+        "model": "deepseek41_flash",
+        "number": 4,
+        "color": "#CC79A7",
+        "cost_usd": 0.8363766767999999,
+        "mean_joint": 0.5530555555555555
+      },
+      {
+        "model": "llama4_maverick",
+        "number": 7,
+        "color": "#000000",
+        "cost_usd": 0.17972365250000003,
+        "mean_joint": 0.25805555555555554
+      }
+    ],
+    "omitted": [
+      {
+        "model": "claude_sonnet55",
+        "reason": "At least one API-reported cost is missing or completeness is not established"
+      },
+      {
+        "model": "gemini38_flash",
+        "reason": "At least one API-reported cost is missing or completeness is not established"
+      },
+      {
+        "model": "qwen38_flash",
+        "reason": "At least one API-reported cost is missing or completeness is not established"
+      },
+      {
+        "model": "mistral_large4",
+        "reason": "At least one API-reported cost is missing or completeness is not established"
+      },
+      {
+        "model": "glm53_flash",
+        "reason": "At least one API-reported cost is missing or completeness is not established"
+      }
+    ]
+  },
+  "contrast_validity_markers": [
+    {
+      "model": "mistral_large4",
+      "contrast": "C-S",
+      "zero_valid_conditions": [
+        "C",
+        "S"
+      ],
+      "no_eligible_S": false
+    },
+    {
+      "model": "mistral_large4",
+      "contrast": "V-R",
+      "zero_valid_conditions": [
+        "V",
+        "R"
+      ],
+      "no_eligible_S": true
+    },
+    {
+      "model": "mistral_large4",
+      "contrast": "W-V",
+      "zero_valid_conditions": [
+        "W",
+        "V"
+      ],
+      "no_eligible_S": true
+    }
+  ],
+  "outputs": {
+    "joint_agreement_heatmap.png": "5d1adaef6d5c2a9fd90476c0b02b6899eea575a60ad291b7ac6b6da516b76a80",
+    "paired_joint_contrasts.png": "33191434f80d7696d914587e3cebcc54103bf368b0e203c813caa55ebec4dbc9",
+    "recorded_cost_performance.png": "c1da56d4ac8567a91172d4628e1c92696d7f240f6493954cf70b5bc9e1d174fd"
+  },
+  "png_metadata": {
+    "joint_agreement_heatmap.png": {
+      "Software": "Matplotlib version3.10.8, https://matplotlib.org/"
+    },
+    "paired_joint_contrasts.png": {
+      "Software": "Matplotlib version3.10.8, https://matplotlib.org/"
+    },
+    "recorded_cost_performance.png": {
+      "Software": "Matplotlib version3.10.8, https://matplotlib.org/"
+    }
+  },
+  "interpretation": [
+    "Agreement with automatic references, not human-validated accuracy",
+    "Original Codex and extension API panels differ in harness and serving",
+    "Descriptive intervals have no multiplicity adjustment; missing reported costs are not zero"
+  ]
+}

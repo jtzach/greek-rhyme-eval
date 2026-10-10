@@ -13,3 +13,5 @@ jobs:
       - run: python -m pip install -e .
       - run: python -B -m unittest discover -s tests -v
       - run: python -B tools/replay_results.py
+      - run: python -B tools/replay_extension_results.py
+      - run: python -B scripts/replay_repair_localization.py --public-root .

@@ -4,6 +4,10 @@
   "files": [
     "data/examples/synthetic_predictions.jsonl",
     "data/examples/synthetic_reference.json",
+    "extension_2026-10-10/analyze.py",
+    "extension_2026-10-10/prepare.py",
+    "extension_2026-10-10/runner.py",
+    "scripts/replay_repair_localization.py",
     "src/rhyme_bench/__init__.py",
     "src/rhyme_bench/__main__.py",
     "src/rhyme_bench/cli.py",
@@ -18,12 +22,15 @@
     "study_2026-10-08/runner.py",
     "study_2026-10-08/verifier/__init__.py",
     "study_2026-10-08/verifier/adapter.py",
+    "tests/test_public_extension_replay.py",
+    "tests/test_public_repair_localization.py",
     "tests/test_public_replay.py",
     "tests/test_rhyme_bench.py",
     "tests/test_study_analysis_2026.py",
     "tests/test_study_runner_2026.py",
     "tests_private/test_verifier_repair_2026.py",
     "tools/check_private_assets.py",
+    "tools/replay_extension_results.py",
     "tools/replay_results.py"
   ]
 }

@@ -1,4 +1,4 @@
-* text=auto
+* -text
 *.py -text
 # These files preserve the original study's exact byte/hash contract.
 study_2026-10-08/analysis.py -text

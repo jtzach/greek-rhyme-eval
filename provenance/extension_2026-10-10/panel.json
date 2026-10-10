@@ -1,0 +1,356 @@
+{
+  "scope": "Public selection/settings derivative; provider catalog transient metrics and precise timestamps omitted",
+  "catalog_date": "2026-10-10",
+  "models": {
+    "claude_sonnet55": {
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "canonical_slug_at_catalog": "anthropic/claude-sonnet-5.5-20260928",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": {
+          "effort": "high"
+        },
+        "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 2.0,
+            "completion": 10.0
+          },
+          "ignore": [
+            "amazon-bedrock",
+            "azure/global",
+            "azure/us",
+            "claude-on-aws",
+            "google-vertex/europe",
+            "google-vertex/global",
+            "google-vertex/us"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.000002",
+          "completion": "0.00001"
+        }
+      },
+      "provider_name": "Anthropic",
+      "quantization": "unknown"
+    },
+    "claude_haiku55": {
+      "id": "anthropic/claude-haiku-5.5",
+      "name": "Anthropic: Claude Haiku 5.5",
+      "canonical_slug_at_catalog": "anthropic/claude-haiku-5.5-20261007",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": {
+          "effort": "high"
+        },
+        "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "anthropic"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.1,
+            "completion": 0.5
+          },
+          "ignore": [
+            "amazon-bedrock",
+            "amazon-bedrock/eu-west-1",
+            "amazon-bedrock/us-east-1",
+            "azure/global",
+            "azure/us",
+            "claude-on-aws",
+            "google-vertex/europe",
+            "google-vertex/global",
+            "google-vertex/us"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.0000001",
+          "completion": "0.0000005"
+        }
+      },
+      "provider_name": "Anthropic",
+      "quantization": "unknown"
+    },
+    "gemini38_flash": {
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "canonical_slug_at_catalog": "google/gemini-3.8-flash-20260902",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": {
+          "effort": "high"
+        },
+        "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "google-ai-studio"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.75,
+            "completion": 3.75
+          },
+          "ignore": [
+            "google-ai-studio/flex",
+            "google-ai-studio/priority",
+            "google-vertex/global",
+            "google-vertex/global/flex",
+            "google-vertex/global/priority"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.00000075",
+          "completion": "0.00000375"
+        }
+      },
+      "provider_name": "Google AI Studio",
+      "quantization": "unknown"
+    },
+    "deepseek41_flash": {
+      "id": "deepseek/deepseek-v4.1-flash",
+      "name": "DeepSeek: DeepSeek V4.1 Flash",
+      "canonical_slug_at_catalog": "deepseek/deepseek-v4.1-flash-20260910",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": {
+          "effort": "high"
+        },
+        "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "deepinfra/fp8"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.14,
+            "completion": 0.42
+          },
+          "ignore": [
+            "alibaba",
+            "atlas-cloud/fp8",
+            "baidu/fp8",
+            "baseten/fast",
+            "baseten/fp8",
+            "coreweave/fp8",
+            "crusoe/fp8",
+            "decart/fp4",
+            "deepseek",
+            "dekallm",
+            "digitalocean",
+            "fireworks",
+            "fireworks/us",
+            "gmicloud/fp8",
+            "inference-net/fp8",
+            "ionstream",
+            "makora/fp8",
+            "modal",
+            "morph/fp8",
+            "novita/fp8",
+            "open-inference/fp4",
+            "parasail/fp8",
+            "phala",
+            "relace",
+            "sail-research/fp4",
+            "siliconflow/fp8",
+            "streamlake/fp8",
+            "together",
+            "venice/fp8",
+            "wafer"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.00000014",
+          "completion": "0.00000042"
+        }
+      },
+      "provider_name": "DeepInfra",
+      "quantization": "fp8"
+    },
+    "qwen38_flash": {
+      "id": "qwen/qwen3.8-flash",
+      "name": "Qwen: Qwen3.8 Flash",
+      "canonical_slug_at_catalog": "qwen/qwen3.8-flash-20260826",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": {
+          "max_tokens": 4096
+        },
+        "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "alibaba"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.15,
+            "completion": 0.47
+          },
+          "ignore": [
+            "alibaba/us-east-1"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.00000015",
+          "completion": "0.00000047"
+        }
+      },
+      "provider_name": "Alibaba",
+      "quantization": "unknown"
+    },
+    "mistral_large4": {
+      "id": "mistralai/mistral-large-4-0",
+      "name": "Mistral: Mistral Large 4",
+      "canonical_slug_at_catalog": "mistralai/mistral-large-4-0-20261006",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": {
+          "effort": "high"
+        },
+        "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "mistral"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.68,
+            "completion": 2.09
+          },
+          "ignore": [
+            "mistral/eu",
+            "mistral/zdr"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.00000068",
+          "completion": "0.00000209"
+        }
+      },
+      "provider_name": "Mistral",
+      "quantization": "unknown"
+    },
+    "llama4_maverick": {
+      "id": "meta-llama/llama-4-maverick",
+      "name": "Meta: Llama 4 Maverick",
+      "canonical_slug_at_catalog": "meta-llama/llama-4-maverick-17b-128e-instruct",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": null,
+        "reasoning_policy": "unsupported",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "digitalocean"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.1875,
+            "completion": 0.6525
+          },
+          "ignore": [
+            "google-vertex/us-east5",
+            "novita/fp8",
+            "parasail/fp8"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.0000001875",
+          "completion": "0.0000006525"
+        }
+      },
+      "provider_name": "DigitalOcean",
+      "quantization": "unknown"
+    },
+    "glm53_flash": {
+      "id": "z-ai/glm-5.3-flash",
+      "name": "Z.ai: GLM 5.3 Flash",
+      "canonical_slug_at_catalog": "z-ai/glm-5.3-flash-20260826",
+      "settings": {
+        "max_tokens": 8192,
+        "reasoning": {
+          "effort": "high"
+        },
+        "reasoning_policy": "high effort where supported; Qwen explicit4096 reasoning tokens; unsupported omitted",
+        "response_format": "json_schema",
+        "provider": {
+          "only": [
+            "fireworks"
+          ],
+          "allow_fallbacks": false,
+          "require_parameters": true,
+          "max_price": {
+            "prompt": 0.15,
+            "completion": 0.5
+          },
+          "ignore": [
+            "atlas-cloud/fp8",
+            "baseten/fp8",
+            "coreweave/nvfp4",
+            "crusoe/fp4",
+            "decart/fp4",
+            "deepinfra/fp4",
+            "dekallm",
+            "digitalocean",
+            "fireworks/us",
+            "friendli",
+            "gmicloud/fp8",
+            "inceptron/fp8",
+            "inference-net/fp4",
+            "modal/nvfp4",
+            "morph/fp8",
+            "near-ai/fp8",
+            "novita/fp8",
+            "open-inference/fp4",
+            "parasail/fast",
+            "parasail/fp4",
+            "phala/nvfp4",
+            "reka",
+            "relace",
+            "sail-research/fp4",
+            "sail-research/us",
+            "siliconflow/fp8",
+            "streamlake/fp8",
+            "together",
+            "venice",
+            "wafer",
+            "z-ai/fp8"
+          ]
+        },
+        "sampling_policy": "provider defaults; no temperature or seed override",
+        "pricing": {
+          "prompt": "0.00000015",
+          "completion": "0.0000005"
+        }
+      },
+      "provider_name": "Fireworks",
+      "quantization": "unknown"
+    }
+  }
+}

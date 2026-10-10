@@ -1,0 +1,165 @@
+{
+  "scope": "Aggregate recorded-attempt metadata, including null serving fields for recovered reservations; not every entry proves HTTP dispatch. No generation IDs, timestamps or raw messages.",
+  "rows": [
+    {
+      "model_requested": "anthropic/claude-haiku-5.5",
+      "model_returned": "anthropic/claude-haiku-5.5",
+      "provider": "Anthropic",
+      "http_status": 200,
+      "finish_reason": "length",
+      "attempt_count": 116
+    },
+    {
+      "model_requested": "anthropic/claude-haiku-5.5",
+      "model_returned": "anthropic/claude-haiku-5.5",
+      "provider": "Anthropic",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "attempt_count": 154
+    },
+    {
+      "model_requested": "anthropic/claude-sonnet-5.5",
+      "model_returned": null,
+      "provider": null,
+      "http_status": null,
+      "finish_reason": null,
+      "attempt_count": 2
+    },
+    {
+      "model_requested": "anthropic/claude-sonnet-5.5",
+      "model_returned": "anthropic/claude-sonnet-5.5",
+      "provider": "Anthropic",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "attempt_count": 250
+    },
+    {
+      "model_requested": "deepseek/deepseek-v4.1-flash",
+      "model_returned": "deepseek/deepseek-v4.1-flash",
+      "provider": "DeepInfra",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "attempt_count": 357
+    },
+    {
+      "model_requested": "google/gemini-3.8-flash",
+      "model_returned": null,
+      "provider": null,
+      "http_status": 200,
+      "finish_reason": null,
+      "attempt_count": 1
+    },
+    {
+      "model_requested": "google/gemini-3.8-flash",
+      "model_returned": null,
+      "provider": null,
+      "http_status": null,
+      "finish_reason": null,
+      "attempt_count": 1
+    },
+    {
+      "model_requested": "google/gemini-3.8-flash",
+      "model_returned": "google/gemini-3.8-flash",
+      "provider": "Google AI Studio",
+      "http_status": 200,
+      "finish_reason": "length",
+      "attempt_count": 60
+    },
+    {
+      "model_requested": "google/gemini-3.8-flash",
+      "model_returned": "google/gemini-3.8-flash",
+      "provider": "Google AI Studio",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "attempt_count": 259
+    },
+    {
+      "model_requested": "meta-llama/llama-4-maverick",
+      "model_returned": "meta-llama/llama-4-maverick",
+      "provider": "DigitalOcean",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "attempt_count": 360
+    },
+    {
+      "model_requested": "mistralai/mistral-large-4-0",
+      "model_returned": null,
+      "provider": null,
+      "http_status": 503,
+      "finish_reason": null,
+      "attempt_count": 9
+    },
+    {
+      "model_requested": "mistralai/mistral-large-4-0",
+      "model_returned": null,
+      "provider": null,
+      "http_status": null,
+      "finish_reason": null,
+      "attempt_count": 1
+    },
+    {
+      "model_requested": "mistralai/mistral-large-4-0",
+      "model_returned": "mistralai/mistral-large-4-0",
+      "provider": "Mistral",
+      "http_status": 200,
+      "finish_reason": "error",
+      "attempt_count": 1
+    },
+    {
+      "model_requested": "mistralai/mistral-large-4-0",
+      "model_returned": "mistralai/mistral-large-4-0",
+      "provider": "Mistral",
+      "http_status": 200,
+      "finish_reason": "length",
+      "attempt_count": 174
+    },
+    {
+      "model_requested": "qwen/qwen3.8-flash",
+      "model_returned": null,
+      "provider": null,
+      "http_status": 429,
+      "finish_reason": null,
+      "attempt_count": 7
+    },
+    {
+      "model_requested": "qwen/qwen3.8-flash",
+      "model_returned": "qwen/qwen3.8-flash",
+      "provider": "Alibaba",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "attempt_count": 340
+    },
+    {
+      "model_requested": "z-ai/glm-5.3-flash",
+      "model_returned": null,
+      "provider": null,
+      "http_status": null,
+      "finish_reason": null,
+      "attempt_count": 1
+    },
+    {
+      "model_requested": "z-ai/glm-5.3-flash",
+      "model_returned": "z-ai/glm-5.3-flash",
+      "provider": "Fireworks",
+      "http_status": 200,
+      "finish_reason": "error",
+      "attempt_count": 2
+    },
+    {
+      "model_requested": "z-ai/glm-5.3-flash",
+      "model_returned": "z-ai/glm-5.3-flash",
+      "provider": "Fireworks",
+      "http_status": 200,
+      "finish_reason": "length",
+      "attempt_count": 34
+    },
+    {
+      "model_requested": "z-ai/glm-5.3-flash",
+      "model_returned": "z-ai/glm-5.3-flash",
+      "provider": "Fireworks",
+      "http_status": 200,
+      "finish_reason": "stop",
+      "attempt_count": 308
+    }
+  ]
+}

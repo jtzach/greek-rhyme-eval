@@ -1,0 +1,126 @@
+{
+  "release_kind": "Study label-only numerical extension replay plus a separate artificial-input format diagnostic; not private-evidence replay",
+  "source_code_sha256": {
+    "extension_2026-10-10/analyze.py": "40173ded12bda748c3a493264614fb9467785ebfe9ceafa7cda9557d77330763",
+    "extension_2026-10-10/prepare.py": "61691b6711f66aedc3d3def2c47be4183b65ca95c9e591bc49fbc90ff48cfcc4",
+    "extension_2026-10-10/runner.py": "24d7a7a2f6f9b91f4855334fe3764b5929f744dbfb505af50dcb5d5440413ef9"
+  },
+  "source_artifact_sha256": {
+    "summary": "52e6c891d0274b25c498a3ce1328596113776e14000170a94fc1ca4db4d98ff4",
+    "per_prediction": "f54b99a9694a5ff3554eca14f7d01efd16acf563e4325530864b003f192408d5",
+    "per_item": "b11396174eba2c13ee56a5a4647f1a11bdf6d65d23070bdeb5b9a1b0c1e6d13c",
+    "jobs": "39825002042b1c5d33e05093bcb9aa01d3f550a9e58896e3e81bd7eac8b5641f",
+    "comparison_original": "c09268508775f145ed5186dd011a3c45fd24fe08561714c2b74a39a5eff5e240",
+    "protocol": "d4c9355747c040f746649102b8e25e5fd3a96861db1c2db00e79e5d7abe5b915",
+    "phase2_freeze": "09093e5d7bbf8ae350740e91581eb22137bcb214dd117269018773a769477451",
+    "panel": "c81690842db546a89d6d915302fe3bff02f097284a9ae760833f0cfee5639105",
+    "preflight": "44e7c563f6872496c1837560ec73acfcb071e770b01e2581a8a122b588d01f82",
+    "cost_ledger": "54c77269cadbbd1b65b55a573a92b4ce5844e596b7745282269a6e358f0f90ca",
+    "final_audit": "345e4690f93cb3cd3463c5b329bfd10a7fc0043fa8dee9dc59d821030f93fcc0",
+    "diagnostic_summary": "2d1c7ab65c4decb0636198cd95baf4e6459dde84b6481a4c229c3aeef49e5075",
+    "diagnostic_specification": "dadf50f8b2385a3e28435b3507a3313ecf8f77b72811ed1f0a53addae04d087f",
+    "diagnostic_protocol": "6133638232d21aa61710e84e9a4b336f01b3303eeb15c83c5ec82661ea67b4d7",
+    "diagnostic_analyzer": "f3b914e0bca1d4eb5e5e2629c318161053e097d091715a968c53288613040857",
+    "diagnostic_runner": "24d7a7a2f6f9b91f4855334fe3764b5929f744dbfb505af50dcb5d5440413ef9",
+    "diagnostic_finalization": "e20e7863cf18212fec294587b0e35d2364a8b7398ece147c311c282a8f5cf345",
+    "localization_artifact": "0bc80bb2ff78c8064aba4f8e8153275fdb40611cda3c4733c7b69f27831a95ed",
+    "localization_analysis_code": "40f7f2010fc4f2e61173b0e0dbb86e2e64842239808c24d2ef1a4879a4312d85"
+  },
+  "analysis_status": "complete_planned_denominators",
+  "preserved_counts": {
+    "initial_calls": 1440,
+    "revision_calls": 1440,
+    "total_planned_calls": 2880,
+    "main_prediction_records": 28800,
+    "legacy_prediction_records": 0
+  },
+  "sanitization": [
+    "Explicit field/file whitelist; no source poetry, theory, study prompts/responses/events or account data. The separate diagnostic specification contains artificial inputs only, without raw HTTP.",
+    "Private source groups replaced by existing public group codes by item ID; sorted bootstrap order verified; mapping withheld.",
+    "Response hashes, remote generation IDs, machine paths and precise workflow timestamps omitted.",
+    "Frozen source copied byte-identically; public adapter calls pure scoring functions only."
+  ],
+  "synthetic_preflight": {
+    "checks": 16,
+    "reported_cost_usd": 0.069690645,
+    "included_in_study_cost": false
+  },
+  "reported_study_cost_usd": "23.8481363093",
+  "unreconciled_attempt_costs": 22,
+  "attempt_count_semantics": "Recorded attempts include conservative reservation recoveries; entries do not independently prove HTTP dispatch or billing.",
+  "replay_arithmetic": {
+    "original": "CPython 3.11 left-to-right numeric sum",
+    "extension": "CPython 3.12 compensated float sum with direct integer additions",
+    "scope": "Default-zero start, finite built-in numeric values and portable signed-32-bit integer fast paths used by the validated records; module-local bindings only; frozen bytes and exact comparisons unchanged",
+    "source": "https://github.com/python/cpython/blob/v3.12.14/Python/bltinmodule.c"
+  },
+  "cost_semantics": "Saved API-reported costs, not independently verified charges; unknown usage/cost remains missing and reservations remain conservative accounting.",
+  "cost_scopes": {
+    "scopes": {
+      "main_study": {
+        "reported_cost_usd": "23.8481363093",
+        "unknown_attempt_costs": 22,
+        "cost_is_complete": false
+      },
+      "synthetic_preflight": {
+        "reported_cost_usd": "0.0696906450",
+        "unknown_attempt_costs": 0,
+        "planned_checks": 16,
+        "cost_is_complete": true
+      },
+      "posthoc_synthetic_format_load": {
+        "reported_cost_usd": 0.19313629,
+        "unknown_attempt_costs": 4,
+        "planned_jobs": 24,
+        "cost_is_complete": false
+      }
+    },
+    "combined_cost_is_complete": false,
+    "combined_reported_cost_usd": null,
+    "semantics": "Saved API-reported costs, not independently verified billing. A combined total is withheld if any scope has missing cost coverage; reservations are not charges."
+  },
+  "posthoc_synthetic_diagnostic": {
+    "planned_jobs": 24,
+    "included_in_main_scores": false,
+    "summary": "results/extension_2026-10-10/synthetic_format_load_summary.json",
+    "specification": "docs/diagnostics/synthetic_format_load_specification.json",
+    "source_sha256": {
+      "summary": "2d1c7ab65c4decb0636198cd95baf4e6459dde84b6481a4c229c3aeef49e5075",
+      "specification": "dadf50f8b2385a3e28435b3507a3313ecf8f77b72811ed1f0a53addae04d087f",
+      "protocol": "6133638232d21aa61710e84e9a4b336f01b3303eeb15c83c5ec82661ea67b4d7",
+      "analyzer": "f3b914e0bca1d4eb5e5e2629c318161053e097d091715a968c53288613040857",
+      "runner": "24d7a7a2f6f9b91f4855334fe3764b5929f744dbfb505af50dcb5d5440413ef9",
+      "finalization": "e20e7863cf18212fec294587b0e35d2364a8b7398ece147c311c282a8f5cf345"
+    }
+  },
+  "posthoc_repair_localization": {
+    "changes_main_scores": false,
+    "models": 11,
+    "changed_items": 50,
+    "unchanged_items": 250,
+    "artifact": "results/extension_2026-10-10/posthoc_repair_localization.json",
+    "replay": "scripts/replay_repair_localization.py",
+    "source_sha256": {
+      "artifact": "0bc80bb2ff78c8064aba4f8e8153275fdb40611cda3c4733c7b69f27831a95ed",
+      "analysis_code": "40f7f2010fc4f2e61173b0e0dbb86e2e64842239808c24d2ef1a4879a4312d85"
+    },
+    "scope": "Post hoc descriptive categorical counts conditional on published raw_feedback-change groups; omitted feedback prevents independent group-membership reconstruction; no causal claim"
+  },
+  "original_study_preserved": true,
+  "numeric_figures": {
+    "provenance": "assets/extension_2026-10-10/provenance.json",
+    "png_files": [
+      "joint_agreement_heatmap.png",
+      "paired_joint_contrasts.png",
+      "recorded_cost_performance.png"
+    ],
+    "source_provenance_sha256": "a7342478bda1d555913eba0c69c1b58177c0dda27ef79856da24e1fec7192da2"
+  },
+  "not_attested": [
+    "Independent raw-response label extraction",
+    "Immutable serving weights",
+    "Human linguistic correctness",
+    "Provider billing",
+    "Author approval or conference submission"
+  ]
+}
