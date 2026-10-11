@@ -15,3 +15,4 @@ jobs:
       - run: python -B tools/replay_results.py
       - run: python -B tools/replay_extension_results.py
       - run: python -B scripts/replay_repair_localization.py --public-root .
+      - run: python -B tools/replay_openai_api_results.py

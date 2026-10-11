@@ -2,7 +2,7 @@
 
 Code and public numerical replay for a Greek rhyme study comparing compact instructions, theoretical context, examples, self-revision and phonological feedback.
 
-**The scores measure agreement with automatic reference labels, not human-validated linguistic accuracy.** The main evaluation covers the same 300 Greek verse pairs across 11 requested models in two separately frozen waves: three Codex models and eight direct-API models, with six conditions and two repetitions in each wave. The additional 40 historical pairs belong only to the original Codex wave.
+**The scores measure agreement with automatic reference labels, not human-validated linguistic accuracy.** The main evaluation covers the same 300 Greek verse pairs in three sequential cohorts: eleven API configurations and three Codex configurations, each with six conditions and two repetitions. Corresponding Astra, Sol and Luna aliases across harnesses are additional serving configurations, not independently attested distinct models or identical immutable weights. The additional 40 historical pairs belong only to the original Codex wave.
 
 See the [eight-model extension methods and results](docs/EXTENSION_2026-10-10.md) and [extension figures](#extension-figures) for the added wave and comparisons. The extension was designed and frozen after the original results existed.
 
@@ -87,3 +87,15 @@ These plots contain numeric results and model labels only. The original-wave fig
 ![Paired changes in extension joint agreement](assets/extension_2026-10-10/paired_joint_contrasts.png)
 
 ![Reported API cost and mean joint agreement](assets/extension_2026-10-10/recorded_cost_performance.png)
+
+## Matched Astra, Sol and Luna API cohort
+
+[Methods, limitations and exact offline replay](docs/OPENAI_API_2026-10-11.md) cover the separately audited 10,800 new records and matched Codex comparisons. Existing-wave numerical files are unchanged. Run `python -B tools/replay_openai_api_results.py`.
+
+These numeric plots compare serving configurations. Matched aliases do not establish identical weights or a causal interface effect. [Figure provenance](assets/extension_2026-10-11_openai_api/provenance.json) binds the final source summaries and PNG bytes.
+
+![Matched Codex and API agreement](assets/extension_2026-10-11_openai_api/matched_codex_api_joint.png)
+
+![Descriptive API minus Codex differences](assets/extension_2026-10-11_openai_api/matched_codex_api_differences.png)
+
+![Eleven API configurations](assets/extension_2026-10-11_openai_api/openrouter_eleven_joint.png)

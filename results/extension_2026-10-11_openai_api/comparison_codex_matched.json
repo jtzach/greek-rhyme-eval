@@ -1,0 +1,2152 @@
+{
+  "status": "complete_matched_configuration_comparison",
+  "cells": [
+    {
+      "alias": "astra",
+      "api_model_key": "astra_api",
+      "codex_model_key": "astra",
+      "condition": "S",
+      "api_requested_id": "openai/gpt-6-astra",
+      "codex_requested_id": "gpt-6-astra",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.61,
+        "stress": 0.9533333333333334,
+        "feature_exact": 0.6183333333333333,
+        "feature_item_f1": 0.7443333333333334,
+        "core_joint": 0.7166666666666667,
+        "valid": 0.9833333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.015,
+        "feature_tp": 563,
+        "feature_fp": 207,
+        "feature_fn": 165,
+        "feature_micro_precision": 0.7311688311688311,
+        "feature_micro_recall": 0.7733516483516484,
+        "feature_micro_f1": 0.7516688918558078
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.635,
+        "stress": 0.975,
+        "feature_exact": 0.6416666666666667,
+        "feature_item_f1": 0.7685000000000008,
+        "core_joint": 0.7483333333333333,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.011666666666666667,
+        "feature_tp": 585,
+        "feature_fp": 207,
+        "feature_fn": 143,
+        "feature_micro_precision": 0.7386363636363636,
+        "feature_micro_recall": 0.8035714285714286,
+        "feature_micro_f1": 0.7697368421052632
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.025,
+          "lower": -0.045,
+          "upper": -0.006666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.021666666666666667,
+          "lower": -0.056666666666666664,
+          "upper": -0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.023333333333333334,
+          "lower": -0.043333333333333335,
+          "upper": -0.005,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.03166666666666667,
+          "lower": -0.06166666666666667,
+          "upper": -0.006666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.05,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.025,
+        "lower": -0.058394160583941604,
+        "upper": -0.006171892751647367,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "astra",
+      "api_model_key": "astra_api",
+      "codex_model_key": "astra",
+      "condition": "C",
+      "api_requested_id": "openai/gpt-6-astra",
+      "codex_requested_id": "gpt-6-astra",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.515,
+        "stress": 0.9666666666666667,
+        "feature_exact": 0.52,
+        "feature_item_f1": 0.6728333333333333,
+        "core_joint": 0.59,
+        "valid": 0.9833333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.0033333333333333335,
+        "feature_tp": 512,
+        "feature_fp": 276,
+        "feature_fn": 216,
+        "feature_micro_precision": 0.649746192893401,
+        "feature_micro_recall": 0.7032967032967034,
+        "feature_micro_f1": 0.6754617414248021
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.5166666666666667,
+        "stress": 0.9833333333333333,
+        "feature_exact": 0.52,
+        "feature_item_f1": 0.6816666666666678,
+        "core_joint": 0.5933333333333334,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.006666666666666667,
+        "feature_tp": 521,
+        "feature_fp": 280,
+        "feature_fn": 207,
+        "feature_micro_precision": 0.6504369538077404,
+        "feature_micro_recall": 0.7156593406593407,
+        "feature_micro_f1": 0.6814911706998038
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.0016666666666666668,
+          "lower": -0.011666666666666667,
+          "upper": 0.006666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.056666666666666664,
+          "upper": 0.006666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": 0.0,
+          "lower": -0.008333333333333333,
+          "upper": 0.006666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.0033333333333333335,
+          "lower": -0.016666666666666666,
+          "upper": 0.006666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.05,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.0016666666666666668,
+        "lower": -0.010256410256410256,
+        "upper": 0.004405286343612335,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "astra",
+      "api_model_key": "astra_api",
+      "codex_model_key": "astra",
+      "condition": "E",
+      "api_requested_id": "openai/gpt-6-astra",
+      "codex_requested_id": "gpt-6-astra",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.6783333333333333,
+        "stress": 0.9566666666666667,
+        "feature_exact": 0.685,
+        "feature_item_f1": 0.7772222222222221,
+        "core_joint": 0.7733333333333333,
+        "valid": 0.9833333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.011666666666666667,
+        "feature_tp": 589,
+        "feature_fp": 178,
+        "feature_fn": 139,
+        "feature_micro_precision": 0.7679269882659713,
+        "feature_micro_recall": 0.8090659340659341,
+        "feature_micro_f1": 0.7879598662207358
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.675,
+        "stress": 0.975,
+        "feature_exact": 0.6816666666666666,
+        "feature_item_f1": 0.7821666666666676,
+        "core_joint": 0.7683333333333333,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.011666666666666667,
+        "feature_tp": 589,
+        "feature_fp": 187,
+        "feature_fn": 139,
+        "feature_micro_precision": 0.759020618556701,
+        "feature_micro_recall": 0.8090659340659341,
+        "feature_micro_f1": 0.7832446808510638
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": 0.0033333333333333335,
+          "lower": -0.015,
+          "upper": 0.021666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.018333333333333333,
+          "lower": -0.051666666666666666,
+          "upper": 0.0033333333333333335,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": 0.0033333333333333335,
+          "lower": -0.013333333333333334,
+          "upper": 0.02,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": 0.005,
+          "lower": -0.021666666666666667,
+          "upper": 0.03166666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.05,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": 0.0033333333333333335,
+        "lower": -0.014354066985645933,
+        "upper": 0.02424315975286848,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "astra",
+      "api_model_key": "astra_api",
+      "codex_model_key": "astra",
+      "condition": "R",
+      "api_requested_id": "openai/gpt-6-astra",
+      "codex_requested_id": "gpt-6-astra",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.5966666666666667,
+        "stress": 0.9566666666666667,
+        "feature_exact": 0.605,
+        "feature_item_f1": 0.7370555555555556,
+        "core_joint": 0.7033333333333334,
+        "valid": 0.9833333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.011666666666666667,
+        "feature_tp": 560,
+        "feature_fp": 216,
+        "feature_fn": 168,
+        "feature_micro_precision": 0.7216494845360825,
+        "feature_micro_recall": 0.7692307692307693,
+        "feature_micro_f1": 0.7446808510638298
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.6416666666666667,
+        "stress": 0.9766666666666667,
+        "feature_exact": 0.6483333333333333,
+        "feature_item_f1": 0.7758888888888897,
+        "core_joint": 0.76,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.01,
+        "feature_tp": 592,
+        "feature_fp": 206,
+        "feature_fn": 136,
+        "feature_micro_precision": 0.7418546365914787,
+        "feature_micro_recall": 0.8131868131868132,
+        "feature_micro_f1": 0.7758846657929227
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.045,
+          "lower": -0.06666666666666667,
+          "upper": -0.025,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.02,
+          "lower": -0.051666666666666666,
+          "upper": -0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.043333333333333335,
+          "lower": -0.06666666666666667,
+          "upper": -0.023333333333333334,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.056666666666666664,
+          "lower": -0.08833333333333333,
+          "upper": -0.028333333333333332,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.05,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.045,
+        "lower": -0.07633720313825276,
+        "upper": -0.032426688991389035,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "astra",
+      "api_model_key": "astra_api",
+      "codex_model_key": "astra",
+      "condition": "V",
+      "api_requested_id": "openai/gpt-6-astra",
+      "codex_requested_id": "gpt-6-astra",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.655,
+        "stress": 0.9666666666666667,
+        "feature_exact": 0.66,
+        "feature_item_f1": 0.7844444444444445,
+        "core_joint": 0.7833333333333333,
+        "valid": 0.9833333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.005,
+        "feature_tp": 601,
+        "feature_fp": 198,
+        "feature_fn": 127,
+        "feature_micro_precision": 0.7521902377972466,
+        "feature_micro_recall": 0.8255494505494505,
+        "feature_micro_f1": 0.7871643745907008
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.675,
+        "stress": 0.9866666666666667,
+        "feature_exact": 0.6783333333333333,
+        "feature_item_f1": 0.8010555555555564,
+        "core_joint": 0.8066666666666666,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.0033333333333333335,
+        "feature_tp": 618,
+        "feature_fp": 201,
+        "feature_fn": 110,
+        "feature_micro_precision": 0.7545787545787546,
+        "feature_micro_recall": 0.8489010989010989,
+        "feature_micro_f1": 0.7989657401422108
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.02,
+          "lower": -0.04666666666666667,
+          "upper": -0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.02,
+          "lower": -0.058333333333333334,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.018333333333333333,
+          "lower": -0.045,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.023333333333333334,
+          "lower": -0.058333333333333334,
+          "upper": 0.0033333333333333335,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.05,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.02,
+        "lower": -0.03057645720158567,
+        "upper": -0.010752688172043012,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "astra",
+      "api_model_key": "astra_api",
+      "codex_model_key": "astra",
+      "condition": "W",
+      "api_requested_id": "openai/gpt-6-astra",
+      "codex_requested_id": "gpt-6-astra",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.6533333333333333,
+        "stress": 0.9666666666666667,
+        "feature_exact": 0.6583333333333333,
+        "feature_item_f1": 0.7816666666666666,
+        "core_joint": 0.7783333333333333,
+        "valid": 0.9833333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.005,
+        "feature_tp": 597,
+        "feature_fp": 197,
+        "feature_fn": 131,
+        "feature_micro_precision": 0.7518891687657431,
+        "feature_micro_recall": 0.820054945054945,
+        "feature_micro_f1": 0.7844940867279895
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.675,
+        "stress": 0.9866666666666667,
+        "feature_exact": 0.6766666666666666,
+        "feature_item_f1": 0.7985555555555564,
+        "core_joint": 0.805,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.005,
+        "feature_tp": 616,
+        "feature_fp": 200,
+        "feature_fn": 112,
+        "feature_micro_precision": 0.7549019607843137,
+        "feature_micro_recall": 0.8461538461538461,
+        "feature_micro_f1": 0.7979274611398963
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.021666666666666667,
+          "lower": -0.04666666666666667,
+          "upper": -0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.02,
+          "lower": -0.056666666666666664,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.018333333333333333,
+          "lower": -0.045,
+          "upper": 0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.02666666666666667,
+          "lower": -0.06166666666666667,
+          "upper": 0.0033333333333333335,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.05,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.021666666666666667,
+        "lower": -0.0389344262295082,
+        "upper": -0.009523056057866196,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "sol",
+      "api_model_key": "sol_api",
+      "codex_model_key": "sol",
+      "condition": "S",
+      "api_requested_id": "openai/gpt-6.1-sol",
+      "codex_requested_id": "gpt-6.1-sol",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.6233333333333333,
+        "stress": 0.9733333333333334,
+        "feature_exact": 0.63,
+        "feature_item_f1": 0.7767777777777778,
+        "core_joint": 0.7483333333333333,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.011666666666666667,
+        "feature_tp": 611,
+        "feature_fp": 237,
+        "feature_fn": 117,
+        "feature_micro_precision": 0.7205188679245284,
+        "feature_micro_recall": 0.8392857142857143,
+        "feature_micro_f1": 0.7753807106598984
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.6416666666666667,
+        "stress": 0.9766666666666667,
+        "feature_exact": 0.645,
+        "feature_item_f1": 0.7807222222222233,
+        "core_joint": 0.7716666666666666,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.013333333333333334,
+        "feature_tp": 604,
+        "feature_fp": 213,
+        "feature_fn": 124,
+        "feature_micro_precision": 0.7392900856793145,
+        "feature_micro_recall": 0.8296703296703297,
+        "feature_micro_f1": 0.7818770226537217
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.018333333333333333,
+          "lower": -0.04,
+          "upper": 0.0033333333333333335,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.0033333333333333335,
+          "lower": -0.011666666666666667,
+          "upper": 0.0033333333333333335,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.015,
+          "lower": -0.035,
+          "upper": 0.005,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.023333333333333334,
+          "lower": -0.04833333333333333,
+          "upper": 0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.018333333333333333,
+        "lower": -0.0570190459024273,
+        "upper": 0.0,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "sol",
+      "api_model_key": "sol_api",
+      "codex_model_key": "sol",
+      "condition": "C",
+      "api_requested_id": "openai/gpt-6.1-sol",
+      "codex_requested_id": "gpt-6.1-sol",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.5116666666666667,
+        "stress": 0.9483333333333334,
+        "feature_exact": 0.5183333333333333,
+        "feature_item_f1": 0.6654444444444444,
+        "core_joint": 0.5883333333333334,
+        "valid": 0.9666666666666667,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.005,
+        "feature_tp": 509,
+        "feature_fp": 266,
+        "feature_fn": 219,
+        "feature_micro_precision": 0.6567741935483871,
+        "feature_micro_recall": 0.6991758241758241,
+        "feature_micro_f1": 0.6773120425815037
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.5183333333333333,
+        "stress": 0.9766666666666667,
+        "feature_exact": 0.5233333333333333,
+        "feature_item_f1": 0.6819444444444455,
+        "core_joint": 0.595,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.008333333333333333,
+        "feature_tp": 520,
+        "feature_fp": 276,
+        "feature_fn": 208,
+        "feature_micro_precision": 0.6532663316582915,
+        "feature_micro_recall": 0.7142857142857143,
+        "feature_micro_f1": 0.6824146981627297
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.006666666666666667,
+          "lower": -0.03,
+          "upper": 0.015,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.028333333333333332,
+          "lower": -0.075,
+          "upper": 0.005,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.005,
+          "lower": -0.028333333333333332,
+          "upper": 0.016666666666666666,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.006666666666666667,
+          "lower": -0.03,
+          "upper": 0.015,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.03333333333333333,
+          "lower": -0.08333333333333333,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.006666666666666667,
+        "lower": -0.017857142857142856,
+        "upper": -0.0019455252918287938,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "sol",
+      "api_model_key": "sol_api",
+      "codex_model_key": "sol",
+      "condition": "E",
+      "api_requested_id": "openai/gpt-6.1-sol",
+      "codex_requested_id": "gpt-6.1-sol",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.6766666666666666,
+        "stress": 0.9633333333333334,
+        "feature_exact": 0.68,
+        "feature_item_f1": 0.7835000000000001,
+        "core_joint": 0.7833333333333333,
+        "valid": 0.9833333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.01,
+        "feature_tp": 597,
+        "feature_fp": 187,
+        "feature_fn": 131,
+        "feature_micro_precision": 0.7614795918367347,
+        "feature_micro_recall": 0.820054945054945,
+        "feature_micro_f1": 0.7896825396825397
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.6783333333333333,
+        "stress": 0.9766666666666667,
+        "feature_exact": 0.685,
+        "feature_item_f1": 0.7963333333333343,
+        "core_joint": 0.79,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.01,
+        "feature_tp": 608,
+        "feature_fp": 190,
+        "feature_fn": 120,
+        "feature_micro_precision": 0.7619047619047619,
+        "feature_micro_recall": 0.8351648351648352,
+        "feature_micro_f1": 0.7968545216251638
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.0016666666666666668,
+          "lower": -0.021666666666666667,
+          "upper": 0.015,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.013333333333333334,
+          "lower": -0.05,
+          "upper": 0.008333333333333333,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.005,
+          "lower": -0.025,
+          "upper": 0.011666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.006666666666666667,
+          "lower": -0.03166666666666667,
+          "upper": 0.011666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.016666666666666666,
+          "lower": -0.05,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.0016666666666666668,
+        "lower": -0.015021862596405176,
+        "upper": 0.016356097747816746,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "sol",
+      "api_model_key": "sol_api",
+      "codex_model_key": "sol",
+      "condition": "R",
+      "api_requested_id": "openai/gpt-6.1-sol",
+      "codex_requested_id": "gpt-6.1-sol",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.61,
+        "stress": 0.97,
+        "feature_exact": 0.6183333333333333,
+        "feature_item_f1": 0.7717222222222223,
+        "core_joint": 0.7283333333333334,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.013333333333333334,
+        "feature_tp": 610,
+        "feature_fp": 248,
+        "feature_fn": 118,
+        "feature_micro_precision": 0.710955710955711,
+        "feature_micro_recall": 0.8379120879120879,
+        "feature_micro_f1": 0.7692307692307693
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.6366666666666667,
+        "stress": 0.98,
+        "feature_exact": 0.6416666666666667,
+        "feature_item_f1": 0.7817222222222234,
+        "core_joint": 0.7683333333333333,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.008333333333333333,
+        "feature_tp": 608,
+        "feature_fp": 223,
+        "feature_fn": 120,
+        "feature_micro_precision": 0.7316486161251504,
+        "feature_micro_recall": 0.8351648351648352,
+        "feature_micro_f1": 0.7799871712636305
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.02666666666666667,
+          "lower": -0.045,
+          "upper": -0.008333333333333333,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.01,
+          "lower": -0.021666666666666667,
+          "upper": -0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.023333333333333334,
+          "lower": -0.04,
+          "upper": -0.006666666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.04,
+          "lower": -0.06666666666666667,
+          "upper": -0.015,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.02666666666666667,
+        "lower": -0.061351038639543644,
+        "upper": -0.003518715029905495,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "sol",
+      "api_model_key": "sol_api",
+      "codex_model_key": "sol",
+      "condition": "V",
+      "api_requested_id": "openai/gpt-6.1-sol",
+      "codex_requested_id": "gpt-6.1-sol",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.6666666666666666,
+        "stress": 0.985,
+        "feature_exact": 0.6716666666666666,
+        "feature_item_f1": 0.8021666666666667,
+        "core_joint": 0.8016666666666666,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.0033333333333333335,
+        "feature_tp": 621,
+        "feature_fp": 212,
+        "feature_fn": 107,
+        "feature_micro_precision": 0.7454981992797118,
+        "feature_micro_recall": 0.853021978021978,
+        "feature_micro_f1": 0.7956438180653427
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.6783333333333333,
+        "stress": 0.9883333333333333,
+        "feature_exact": 0.68,
+        "feature_item_f1": 0.807000000000001,
+        "core_joint": 0.8133333333333334,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.0033333333333333335,
+        "feature_tp": 622,
+        "feature_fp": 200,
+        "feature_fn": 106,
+        "feature_micro_precision": 0.7566909975669099,
+        "feature_micro_recall": 0.8543956043956044,
+        "feature_micro_f1": 0.8025806451612904
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.011666666666666667,
+          "lower": -0.021666666666666667,
+          "upper": -0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.0033333333333333335,
+          "lower": -0.008333333333333333,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.008333333333333333,
+          "lower": -0.018333333333333333,
+          "upper": 0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.011666666666666667,
+          "lower": -0.021666666666666667,
+          "upper": -0.0016666666666666668,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.011666666666666667,
+        "lower": -0.03017241379310345,
+        "upper": 0.002976190476190476,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "sol",
+      "api_model_key": "sol_api",
+      "codex_model_key": "sol",
+      "condition": "W",
+      "api_requested_id": "openai/gpt-6.1-sol",
+      "codex_requested_id": "gpt-6.1-sol",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.675,
+        "stress": 0.9833333333333333,
+        "feature_exact": 0.675,
+        "feature_item_f1": 0.8022777777777778,
+        "core_joint": 0.81,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.01,
+        "feature_tp": 619,
+        "feature_fp": 201,
+        "feature_fn": 109,
+        "feature_micro_precision": 0.7548780487804878,
+        "feature_micro_recall": 0.8502747252747253,
+        "feature_micro_f1": 0.7997416020671835
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.6766666666666666,
+        "stress": 0.985,
+        "feature_exact": 0.6766666666666666,
+        "feature_item_f1": 0.8025555555555566,
+        "core_joint": 0.8116666666666666,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.008333333333333333,
+        "feature_tp": 620,
+        "feature_fp": 200,
+        "feature_fn": 108,
+        "feature_micro_precision": 0.7560975609756098,
+        "feature_micro_recall": 0.8516483516483516,
+        "feature_micro_f1": 0.8010335917312662
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.0016666666666666668,
+          "lower": -0.013333333333333334,
+          "upper": 0.008333333333333333,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.0016666666666666668,
+          "lower": -0.005,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.0016666666666666668,
+          "lower": -0.013333333333333334,
+          "upper": 0.008333333333333333,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.0016666666666666668,
+          "lower": -0.013333333333333334,
+          "upper": 0.01,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": 0.0,
+          "lower": 0.0,
+          "upper": 0.0,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.0016666666666666668,
+        "lower": -0.012875536480686695,
+        "upper": 0.004987842892768075,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "luna",
+      "api_model_key": "luna_api",
+      "codex_model_key": "luna",
+      "condition": "S",
+      "api_requested_id": "openai/gpt-6-luna",
+      "codex_requested_id": "gpt-6-luna",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.18166666666666667,
+        "stress": 0.25166666666666665,
+        "feature_exact": 0.18166666666666667,
+        "feature_item_f1": 0.20272222222222222,
+        "core_joint": 0.185,
+        "valid": 0.26666666666666666,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.0033333333333333335,
+        "feature_tp": 142,
+        "feature_fp": 47,
+        "feature_fn": 586,
+        "feature_micro_precision": 0.7513227513227513,
+        "feature_micro_recall": 0.19505494505494506,
+        "feature_micro_f1": 0.30970556161395857
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.5666666666666667,
+        "stress": 0.9316666666666666,
+        "feature_exact": 0.5733333333333334,
+        "feature_item_f1": 0.663444444444445,
+        "core_joint": 0.5883333333333334,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.025,
+        "feature_tp": 459,
+        "feature_fp": 219,
+        "feature_fn": 269,
+        "feature_micro_precision": 0.6769911504424779,
+        "feature_micro_recall": 0.6304945054945055,
+        "feature_micro_f1": 0.6529160739687055
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.385,
+          "lower": -0.47333333333333333,
+          "upper": -0.2916666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.68,
+          "lower": -0.7916666666666666,
+          "upper": -0.5566666666666666,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.39166666666666666,
+          "lower": -0.48,
+          "upper": -0.29833333333333334,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.4033333333333333,
+          "lower": -0.495,
+          "upper": -0.30666666666666664,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.7333333333333333,
+          "lower": -0.85,
+          "upper": -0.6,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.385,
+        "lower": -0.4166666666666667,
+        "upper": -0.3625,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "luna",
+      "api_model_key": "luna_api",
+      "codex_model_key": "luna",
+      "condition": "C",
+      "api_requested_id": "openai/gpt-6-luna",
+      "codex_requested_id": "gpt-6-luna",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.3983333333333333,
+        "stress": 0.6166666666666667,
+        "feature_exact": 0.3983333333333333,
+        "feature_item_f1": 0.4619444444444445,
+        "core_joint": 0.42833333333333334,
+        "valid": 0.6333333333333333,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.01,
+        "feature_tp": 329,
+        "feature_fp": 127,
+        "feature_fn": 399,
+        "feature_micro_precision": 0.7214912280701754,
+        "feature_micro_recall": 0.4519230769230769,
+        "feature_micro_f1": 0.5557432432432432
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.5683333333333334,
+        "stress": 0.94,
+        "feature_exact": 0.575,
+        "feature_item_f1": 0.6809444444444448,
+        "core_joint": 0.6066666666666667,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.023333333333333334,
+        "feature_tp": 485,
+        "feature_fp": 220,
+        "feature_fn": 243,
+        "feature_micro_precision": 0.6879432624113475,
+        "feature_micro_recall": 0.6662087912087912,
+        "feature_micro_f1": 0.6769016050244243
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.17,
+          "lower": -0.24666666666666667,
+          "upper": -0.09666666666666666,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.3233333333333333,
+          "lower": -0.4350416666666666,
+          "upper": -0.21333333333333335,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.17666666666666667,
+          "lower": -0.25166666666666665,
+          "upper": -0.10333333333333333,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.17833333333333334,
+          "lower": -0.25833333333333336,
+          "upper": -0.1,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.36666666666666664,
+          "lower": -0.48333333333333334,
+          "upper": -0.25,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.17,
+        "lower": -0.1997639225181598,
+        "upper": -0.12399873949579834,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "luna",
+      "api_model_key": "luna_api",
+      "codex_model_key": "luna",
+      "condition": "E",
+      "api_requested_id": "openai/gpt-6-luna",
+      "codex_requested_id": "gpt-6-luna",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.17,
+        "stress": 0.23333333333333334,
+        "feature_exact": 0.17166666666666666,
+        "feature_item_f1": 0.18872222222222224,
+        "core_joint": 0.17166666666666666,
+        "valid": 0.25,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.005,
+        "feature_tp": 123,
+        "feature_fp": 39,
+        "feature_fn": 605,
+        "feature_micro_precision": 0.7592592592592593,
+        "feature_micro_recall": 0.16895604395604397,
+        "feature_micro_f1": 0.27640449438202247
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.5333333333333333,
+        "stress": 0.9333333333333333,
+        "feature_exact": 0.54,
+        "feature_item_f1": 0.635555555555556,
+        "core_joint": 0.555,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.025,
+        "feature_tp": 428,
+        "feature_fp": 225,
+        "feature_fn": 300,
+        "feature_micro_precision": 0.655436447166922,
+        "feature_micro_recall": 0.5879120879120879,
+        "feature_micro_f1": 0.6198406951484432
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.36333333333333334,
+          "lower": -0.44333333333333336,
+          "upper": -0.2816666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.7,
+          "lower": -0.8066666666666666,
+          "upper": -0.5866666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.36833333333333335,
+          "lower": -0.45166666666666666,
+          "upper": -0.285,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.38333333333333336,
+          "lower": -0.465,
+          "upper": -0.3,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.75,
+          "lower": -0.85,
+          "upper": -0.6333333333333333,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.36333333333333334,
+        "lower": -0.39401068109036946,
+        "upper": -0.3215920523138833,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "luna",
+      "api_model_key": "luna_api",
+      "codex_model_key": "luna",
+      "condition": "R",
+      "api_requested_id": "openai/gpt-6-luna",
+      "codex_requested_id": "gpt-6-luna",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.17666666666666667,
+        "stress": 0.24,
+        "feature_exact": 0.17666666666666667,
+        "feature_item_f1": 0.19605555555555557,
+        "core_joint": 0.185,
+        "valid": 0.25,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.0033333333333333335,
+        "feature_tp": 136,
+        "feature_fp": 39,
+        "feature_fn": 592,
+        "feature_micro_precision": 0.7771428571428571,
+        "feature_micro_recall": 0.18681318681318682,
+        "feature_micro_f1": 0.301218161683278
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.5983333333333334,
+        "stress": 0.9416666666666667,
+        "feature_exact": 0.6,
+        "feature_item_f1": 0.683555555555556,
+        "core_joint": 0.625,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.025,
+        "feature_tp": 475,
+        "feature_fp": 210,
+        "feature_fn": 253,
+        "feature_micro_precision": 0.6934306569343066,
+        "feature_micro_recall": 0.6524725274725275,
+        "feature_micro_f1": 0.6723283793347488
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.4216666666666667,
+          "lower": -0.51,
+          "upper": -0.33,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.7016666666666667,
+          "lower": -0.81,
+          "upper": -0.5833333333333334,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.42333333333333334,
+          "lower": -0.5116666666666667,
+          "upper": -0.33166666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.44,
+          "lower": -0.5316666666666666,
+          "upper": -0.3433333333333333,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.75,
+          "lower": -0.8666666666666667,
+          "upper": -0.6166666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.4216666666666667,
+        "lower": -0.4511301118650284,
+        "upper": -0.4,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "luna",
+      "api_model_key": "luna_api",
+      "codex_model_key": "luna",
+      "condition": "V",
+      "api_requested_id": "openai/gpt-6-luna",
+      "codex_requested_id": "gpt-6-luna",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.21833333333333332,
+        "stress": 0.25666666666666665,
+        "feature_exact": 0.21833333333333332,
+        "feature_item_f1": 0.24355555555555555,
+        "core_joint": 0.255,
+        "valid": 0.26666666666666666,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.005,
+        "feature_tp": 182,
+        "feature_fp": 29,
+        "feature_fn": 546,
+        "feature_micro_precision": 0.8625592417061612,
+        "feature_micro_recall": 0.25,
+        "feature_micro_f1": 0.3876464323748669
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.8,
+        "stress": 0.985,
+        "feature_exact": 0.8,
+        "feature_item_f1": 0.9048888888888895,
+        "core_joint": 0.9466666666666667,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.006666666666666667,
+        "feature_tp": 696,
+        "feature_fp": 129,
+        "feature_fn": 32,
+        "feature_micro_precision": 0.8436363636363636,
+        "feature_micro_recall": 0.9560439560439561,
+        "feature_micro_f1": 0.8963296844816484
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.5816666666666667,
+          "lower": -0.6816666666666666,
+          "upper": -0.4716666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.7283333333333334,
+          "lower": -0.8433333333333334,
+          "upper": -0.6,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.5816666666666667,
+          "lower": -0.6816666666666666,
+          "upper": -0.4716666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.6916666666666667,
+          "lower": -0.8083333333333333,
+          "upper": -0.565,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.7333333333333333,
+          "lower": -0.85,
+          "upper": -0.6,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.5816666666666667,
+        "lower": -0.6263205453392517,
+        "upper": -0.5482456140350878,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    },
+    {
+      "alias": "luna",
+      "api_model_key": "luna_api",
+      "codex_model_key": "luna",
+      "condition": "W",
+      "api_requested_id": "openai/gpt-6-luna",
+      "codex_requested_id": "gpt-6-luna",
+      "n_items": 300,
+      "n_predictions_per_interface": 600,
+      "api_metrics": {
+        "n": 600,
+        "joint": 0.19666666666666666,
+        "stress": 0.24,
+        "feature_exact": 0.19666666666666666,
+        "feature_item_f1": 0.22244444444444444,
+        "core_joint": 0.23166666666666666,
+        "valid": 0.25,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.0033333333333333335,
+        "feature_tp": 165,
+        "feature_fp": 33,
+        "feature_fn": 563,
+        "feature_micro_precision": 0.8333333333333334,
+        "feature_micro_recall": 0.22664835164835165,
+        "feature_micro_f1": 0.3563714902807775
+      },
+      "codex_metrics": {
+        "n": 600,
+        "joint": 0.805,
+        "stress": 0.9866666666666667,
+        "feature_exact": 0.805,
+        "feature_item_f1": 0.9180000000000007,
+        "core_joint": 0.9633333333333334,
+        "valid": 1.0,
+        "none_with_nonempty_features": 0.0,
+        "predicted_none": 0.006666666666666667,
+        "feature_tp": 705,
+        "feature_fp": 126,
+        "feature_fn": 23,
+        "feature_micro_precision": 0.8483754512635379,
+        "feature_micro_recall": 0.9684065934065934,
+        "feature_micro_f1": 0.9044259140474663
+      },
+      "difference_direction": "OpenRouter API minus archived Codex",
+      "paired_batch_differences": {
+        "joint": {
+          "estimate": -0.6083333333333333,
+          "lower": -0.7066666666666667,
+          "upper": -0.5016666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "stress": {
+          "estimate": -0.7466666666666667,
+          "lower": -0.86,
+          "upper": -0.6166666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "feature_exact": {
+          "estimate": -0.6083333333333333,
+          "lower": -0.7066666666666667,
+          "upper": -0.5016666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "core_joint": {
+          "estimate": -0.7316666666666667,
+          "lower": -0.8466666666666667,
+          "upper": -0.605,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        },
+        "valid": {
+          "estimate": -0.75,
+          "lower": -0.8666666666666667,
+          "upper": -0.6166666666666667,
+          "clusters": 30,
+          "items": 300,
+          "resamples": 10000,
+          "seed": 20261008,
+          "method": "item-weighted paired cluster percentile bootstrap"
+        }
+      },
+      "joint_author_group_sensitivity": {
+        "estimate": -0.6083333333333333,
+        "lower": -0.6531549694856147,
+        "upper": -0.5794392523364486,
+        "clusters": 11,
+        "items": 300,
+        "resamples": 10000,
+        "seed": 20261008,
+        "method": "item-weighted paired cluster percentile bootstrap"
+      }
+    }
+  ],
+  "reliability": [
+    {
+      "alias": "astra",
+      "model_key": "astra_api",
+      "interface": "OpenRouter API",
+      "planned_batch_jobs": 360,
+      "status_counts": {
+        "blocked_by_initial_failure": 3,
+        "invalid_format": 3,
+        "valid": 354
+      },
+      "recorded_attempt_entries": 371,
+      "condition_status_counts": {
+        "S": {
+          "invalid_format": 1,
+          "valid": 59
+        },
+        "C": {
+          "invalid_format": 1,
+          "valid": 59
+        },
+        "E": {
+          "invalid_format": 1,
+          "valid": 59
+        },
+        "R": {
+          "blocked_by_initial_failure": 1,
+          "valid": 59
+        },
+        "V": {
+          "blocked_by_initial_failure": 1,
+          "valid": 59
+        },
+        "W": {
+          "blocked_by_initial_failure": 1,
+          "valid": 59
+        }
+      }
+    },
+    {
+      "alias": "astra",
+      "model_key": "astra",
+      "interface": "Codex CLI",
+      "planned_batch_jobs": 360,
+      "status_counts": {
+        "valid": 360
+      },
+      "recorded_attempt_entries": 363,
+      "condition_status_counts": {
+        "S": {
+          "valid": 60
+        },
+        "C": {
+          "valid": 60
+        },
+        "E": {
+          "valid": 60
+        },
+        "R": {
+          "valid": 60
+        },
+        "V": {
+          "valid": 60
+        },
+        "W": {
+          "valid": 60
+        }
+      }
+    },
+    {
+      "alias": "sol",
+      "model_key": "sol_api",
+      "interface": "OpenRouter API",
+      "planned_batch_jobs": 360,
+      "status_counts": {
+        "invalid_format": 2,
+        "transport_or_interrupted_failure": 1,
+        "valid": 357
+      },
+      "recorded_attempt_entries": 386,
+      "condition_status_counts": {
+        "S": {
+          "valid": 60
+        },
+        "C": {
+          "invalid_format": 1,
+          "transport_or_interrupted_failure": 1,
+          "valid": 58
+        },
+        "E": {
+          "invalid_format": 1,
+          "valid": 59
+        },
+        "R": {
+          "valid": 60
+        },
+        "V": {
+          "valid": 60
+        },
+        "W": {
+          "valid": 60
+        }
+      }
+    },
+    {
+      "alias": "sol",
+      "model_key": "sol",
+      "interface": "Codex CLI",
+      "planned_batch_jobs": 360,
+      "status_counts": {
+        "valid": 360
+      },
+      "recorded_attempt_entries": 363,
+      "condition_status_counts": {
+        "S": {
+          "valid": 60
+        },
+        "C": {
+          "valid": 60
+        },
+        "E": {
+          "valid": 60
+        },
+        "R": {
+          "valid": 60
+        },
+        "V": {
+          "valid": 60
+        },
+        "W": {
+          "valid": 60
+        }
+      }
+    },
+    {
+      "alias": "luna",
+      "model_key": "luna_api",
+      "interface": "OpenRouter API",
+      "planned_batch_jobs": 360,
+      "status_counts": {
+        "blocked_by_initial_failure": 132,
+        "invalid_format": 113,
+        "valid": 115
+      },
+      "recorded_attempt_entries": 262,
+      "condition_status_counts": {
+        "S": {
+          "invalid_format": 44,
+          "valid": 16
+        },
+        "C": {
+          "invalid_format": 22,
+          "valid": 38
+        },
+        "E": {
+          "invalid_format": 45,
+          "valid": 15
+        },
+        "R": {
+          "blocked_by_initial_failure": 44,
+          "invalid_format": 1,
+          "valid": 15
+        },
+        "V": {
+          "blocked_by_initial_failure": 44,
+          "valid": 16
+        },
+        "W": {
+          "blocked_by_initial_failure": 44,
+          "invalid_format": 1,
+          "valid": 15
+        }
+      }
+    },
+    {
+      "alias": "luna",
+      "model_key": "luna",
+      "interface": "Codex CLI",
+      "planned_batch_jobs": 360,
+      "status_counts": {
+        "valid": 360
+      },
+      "recorded_attempt_entries": 360,
+      "condition_status_counts": {
+        "S": {
+          "valid": 60
+        },
+        "C": {
+          "valid": 60
+        },
+        "E": {
+          "valid": 60
+        },
+        "R": {
+          "valid": 60
+        },
+        "V": {
+          "valid": 60
+        },
+        "W": {
+          "valid": 60
+        }
+      }
+    }
+  ],
+  "statistics": {
+    "resamples": 10000,
+    "seed": 20261008,
+    "unit": "Two repetitions averaged within each item; paired resampling of 30 ten-pair batches",
+    "intervals": "Descriptive 95% percentile intervals; no multiplicity-adjusted inference",
+    "direction": "OpenRouter API minus archived Codex"
+  },
+  "scope": [
+    "Three additional serving configurations of the same three named model aliases, not three additional unique models.",
+    "Requested alias correspondence does not independently attest identical underlying weights or immutable snapshots.",
+    "Interface, run date, hidden system instructions, reasoning/output limits, provider serving and other configuration differences can contribute; this is not a randomized causal interface ablation.",
+    "S/C/E reuse frozen input prompt bytes. R/V/W revise each configuration's own S answer, so the revision inputs can differ between configurations.",
+    "Agreement with automatic stored corpus labels, not human-validated accuracy. Invalid outputs and blocked dependencies remain errors in the planned denominators.",
+    "Pairing is by item/batch after averaging repetitions; repetition numbers do not establish matched random decoding draws.",
+    "Recorded attempt entries may include interrupted reservations without verified HTTP dispatch. Codex subscription dollar costs are unavailable."
+  ]
+}

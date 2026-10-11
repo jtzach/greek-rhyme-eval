@@ -1,0 +1,36 @@
+{
+  "analysis_status": "complete_planned_denominators",
+  "missing_final_jobs": [],
+  "source_code_sha256": {
+    "extension_2026-10-11_openai_api/analyze.py": "40173ded12bda748c3a493264614fb9467785ebfe9ceafa7cda9557d77330763",
+    "extension_2026-10-11_openai_api/prepare.py": "eece8e0df401d8e7054c27c0950c515181e9ffbf3c4b042dcf98b25ee8eb1553",
+    "extension_2026-10-11_openai_api/runner.py": "fc3269efd68872745ca79f7d623c5ac4b6424558fd786e2f0216b5ae21de4d51",
+    "extension_2026-10-11_openai_api/compare_codex.py": "bebe7d6ed880a5b28d8d47bd1a21d25e24672c3dc5358563b85f14e111a8e760"
+  },
+  "runtime": {
+    "analysis_python_version": "3.12.14",
+    "comparison_python_version": "3.12.14"
+  },
+  "source_artifact_sha256": {
+    "summary": "6e87f39c4ccd4726d3dbf3e7229553048d7ce96d4608dbffad34de1e64dca4df",
+    "per_prediction": "759477aee7e8a6dea897430c263151fe59105109e7872708345c163af4c3a4ba",
+    "per_item": "3381a8dbab72f2786efd2f76d25df89a8b709cccc1f26cb67ee6385d1a3e3d7e",
+    "jobs": "a6c41f6393da7dbbfb595101db767c83b08bb64c4cc8a4f3552e70bb31bf7363",
+    "comparison_codex_matched": "095a7373f32431874eaf04923734f806413a9130156e6b3b2100f13292448d4d"
+  },
+  "protocol_sha256": "5293c1ea0b69fe05c95a6f07ddb34f0f6923293e02be8080379cec183de56fa1",
+  "final_audit_sha256": "891c8fa4908e46f7288421892b0e18a6ec9965349e5606f5a4cb735c4d197570",
+  "collection_provenance_sha256": "eaddf16c8888ecbeb50f3654e2d71b72e395423f81b3c3b268b0274e2151fe8d",
+  "scope": "Categorical/aggregate numerical replay only; final audit is private-evidence provenance, not publication or billing attestation.",
+  "sanitization": [
+    "Explicit fields only; response hashes and all selected/historical evidence paths omitted.",
+    "Source groups remapped to existing opaque public codes without changing sorted bootstrap order.",
+    "No raw text, study prompts, account/ledger records, machine paths, workflow timestamps or remote generation IDs."
+  ],
+  "accounting": {
+    "study_known_reported_usd": "80.446642710",
+    "study_unknown_attempt_costs": 75,
+    "preflight_known_reported_usd": "0.169679525",
+    "semantics": "Cumulative saved attempt entries across administrative stages; not proven dispatch or billing. Preflight excluded from study denominators; unknown costs not zero."
+  }
+}

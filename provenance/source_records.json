@@ -166,6 +166,36 @@
       "path": "tests/test_public_repair_localization.py",
       "sha256": "b478f95dacbccd3774e0bdbc0866be4b68c21d40c1644dc150fb5c3533bb1502",
       "relationship": "New public offline adapter or synthetic test; no model calls or private input access"
+    },
+    {
+      "path": "extension_2026-10-11_openai_api/analyze.py",
+      "sha256": "40173ded12bda748c3a493264614fb9467785ebfe9ceafa7cda9557d77330763",
+      "relationship": "Byte-identical frozen cohort source"
+    },
+    {
+      "path": "extension_2026-10-11_openai_api/prepare.py",
+      "sha256": "eece8e0df401d8e7054c27c0950c515181e9ffbf3c4b042dcf98b25ee8eb1553",
+      "relationship": "Byte-identical frozen cohort source"
+    },
+    {
+      "path": "extension_2026-10-11_openai_api/runner.py",
+      "sha256": "fc3269efd68872745ca79f7d623c5ac4b6424558fd786e2f0216b5ae21de4d51",
+      "relationship": "Byte-identical frozen cohort source"
+    },
+    {
+      "path": "extension_2026-10-11_openai_api/compare_codex.py",
+      "sha256": "bebe7d6ed880a5b28d8d47bd1a21d25e24672c3dc5358563b85f14e111a8e760",
+      "relationship": "Byte-identical frozen cohort source"
+    },
+    {
+      "path": "tools/replay_openai_api_results.py",
+      "sha256": "e8b1463d6c80fe7b2d4b86b6782f8b993d0224b29c53349ae40ca2fa92bd53d0",
+      "relationship": "Public offline adapter or synthetic test; no model calls"
+    },
+    {
+      "path": "tests/test_public_openai_api_replay.py",
+      "sha256": "c66f4d7f2499785a10c24a0c14d817606c90e9b1d070bca904840744f7a05cd1",
+      "relationship": "Public offline adapter or synthetic test; no model calls"
     }
   ]
 }

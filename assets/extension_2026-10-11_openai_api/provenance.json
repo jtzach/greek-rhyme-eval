@@ -1,0 +1,62 @@
+{
+  "scope": "Numeric figures only; source paths and execution timestamps omitted.",
+  "source_provenance_sha256": "b5a4498e838d94a7dc992472b38903fd48b0cd55a66bb881e689a38c21b5b5d3",
+  "script_sha256": "3aa2782005b4915831543214c65361841c799c82a5b0422bbf5ba34282342b90",
+  "input_hashes": {
+    "summary": "6e87f39c4ccd4726d3dbf3e7229553048d7ce96d4608dbffad34de1e64dca4df",
+    "comparison": "095a7373f32431874eaf04923734f806413a9130156e6b3b2100f13292448d4d",
+    "original_summary": "5dba8a07c1d044e77da4ec8c8dc67bba921ba4431bbd0bd324e691b93e61e642",
+    "protocol": "5293c1ea0b69fe05c95a6f07ddb34f0f6923293e02be8080379cec183de56fa1",
+    "comparison_code": "bebe7d6ed880a5b28d8d47bd1a21d25e24672c3dc5358563b85f14e111a8e760",
+    "matched_source/openrouter_api/analysis/summary.json": "6e87f39c4ccd4726d3dbf3e7229553048d7ce96d4608dbffad34de1e64dca4df",
+    "matched_source/openrouter_api/analysis/per_item.json": "3381a8dbab72f2786efd2f76d25df89a8b709cccc1f26cb67ee6385d1a3e3d7e",
+    "matched_source/openrouter_api/analysis/jobs.json": "a6c41f6393da7dbbfb595101db767c83b08bb64c4cc8a4f3552e70bb31bf7363",
+    "matched_source/openrouter_api/protocol_frozen.json": "5293c1ea0b69fe05c95a6f07ddb34f0f6923293e02be8080379cec183de56fa1",
+    "matched_source/codex/analysis/summary.json": "5dba8a07c1d044e77da4ec8c8dc67bba921ba4431bbd0bd324e691b93e61e642",
+    "matched_source/codex/analysis/per_item.json": "6a5d62cb5b2740dc0f9226c51fa39ec4d844e6f78ff2ece522837a629c97b266",
+    "matched_source/codex/analysis/jobs.json": "b6ffdd96f79772cd64c2227af04dd2e74b776c211099806378b55cbb4c27f4b6",
+    "matched_source/codex/protocol_frozen.json": "27cd61a90975048b0f7afbdf39fc08dc8c46e88ab5ca1ded931046cb1493d00e",
+    "previous_api_summary": "52e6c891d0274b25c498a3ce1328596113776e14000170a94fc1ca4db4d98ff4",
+    "previous_api_protocol": "d4c9355747c040f746649102b8e25e5fd3a96861db1c2db00e79e5d7abe5b915"
+  },
+  "png_dpi": 360,
+  "matched_order": [
+    "astra_api",
+    "sol_api",
+    "luna_api"
+  ],
+  "api_panel_order": {
+    "astra_api": "openai/gpt-6-astra",
+    "sol_api": "openai/gpt-6.1-sol",
+    "luna_api": "openai/gpt-6-luna",
+    "claude_sonnet55": "anthropic/claude-sonnet-5.5",
+    "claude_haiku55": "anthropic/claude-haiku-5.5",
+    "gemini38_flash": "google/gemini-3.8-flash",
+    "deepseek41_flash": "deepseek/deepseek-v4.1-flash",
+    "qwen38_flash": "qwen/qwen3.8-flash",
+    "mistral_large4": "mistralai/mistral-large-4-0",
+    "llama4_maverick": "meta-llama/llama-4-maverick",
+    "glm53_flash": "z-ai/glm-5.3-flash"
+  },
+  "png_metadata": {
+    "matched_codex_api_differences.png": {
+      "Software": "Matplotlib version3.10.8, https://matplotlib.org/"
+    },
+    "matched_codex_api_joint.png": {
+      "Software": "Matplotlib version3.10.8, https://matplotlib.org/"
+    },
+    "openrouter_eleven_joint.png": {
+      "Software": "Matplotlib version3.10.8, https://matplotlib.org/"
+    }
+  },
+  "outputs": {
+    "matched_codex_api_differences.png": "fc4db367d5e3417a21b24a727397f72655516e518d7632286d83e3a7fccbe409",
+    "matched_codex_api_joint.png": "cee092d9ea14b484bd909e9ff268e0b37c8fa62f518c7f68fccdf2c621ce2fa6",
+    "openrouter_eleven_joint.png": "c8ca6f6091eb838a86b65626f995397d0ac2bdd01caf0fff994256068f64f9b9"
+  },
+  "interpretation": [
+    "Automatic-reference agreement is not independently validated linguistic accuracy.",
+    "Matched aliases do not attest identical weights or a causal interface effect.",
+    "All planned failures remain in denominators; intervals are descriptive without multiplicity adjustment."
+  ]
+}

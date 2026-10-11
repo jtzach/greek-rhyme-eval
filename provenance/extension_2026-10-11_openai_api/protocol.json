@@ -1,0 +1,172 @@
+{
+  "models": {
+    "astra_api": "openai/gpt-6-astra",
+    "sol_api": "openai/gpt-6.1-sol",
+    "luna_api": "openai/gpt-6-luna"
+  },
+  "model_settings": {
+    "openai/gpt-6-astra": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort for all three requested models",
+      "response_format": "json_schema",
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "provider": {
+        "only": [
+          "openai"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "ignore": [
+          "openai/flex",
+          "azure",
+          "amazon-bedrock/us-west-2",
+          "azure/us",
+          "openai/fast",
+          "openai/ultrafast"
+        ],
+        "max_price": {
+          "prompt": 10.0,
+          "completion": 50.0
+        }
+      },
+      "pricing": {
+        "prompt": "0.00001",
+        "completion": "0.00005"
+      }
+    },
+    "openai/gpt-6.1-sol": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort for all three requested models",
+      "response_format": "json_schema",
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "provider": {
+        "only": [
+          "openai"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "ignore": [
+          "openai/flex",
+          "azure",
+          "amazon-bedrock/us-east-1",
+          "azure/eu",
+          "azure/us",
+          "openai/fast",
+          "openai/ultrafast"
+        ],
+        "max_price": {
+          "prompt": 2.0,
+          "completion": 10.0
+        }
+      },
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.00001"
+      }
+    },
+    "openai/gpt-6-luna": {
+      "max_tokens": 8192,
+      "reasoning": {
+        "effort": "high"
+      },
+      "reasoning_policy": "high effort for all three requested models",
+      "response_format": "json_schema",
+      "sampling_policy": "provider defaults; no temperature or seed override",
+      "provider": {
+        "only": [
+          "openai"
+        ],
+        "allow_fallbacks": false,
+        "require_parameters": true,
+        "ignore": [
+          "openai/flex",
+          "azure",
+          "azure/us",
+          "azure/eu",
+          "amazon-bedrock/us-east-1",
+          "openai/fast"
+        ],
+        "max_price": {
+          "prompt": 0.1,
+          "completion": 0.5
+        }
+      },
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005"
+      }
+    }
+  },
+  "replicates": 2,
+  "batch_size": 10,
+  "main_pairs": 300,
+  "conditions": {
+    "S": "Common compact taxonomy only, one call",
+    "C": "S plus the complete extracted Topintzi et al. 2019 document, one call",
+    "E": "S plus 15 seeded demonstrations from separate60 pool (5 per position), one call",
+    "R": "Shared S output plus self-revision instruction, one further call",
+    "V": "Shared S output plus frozen original verifier feedback, one further call",
+    "W": "Shared S output plus isolated repaired verifier feedback, one further call"
+  },
+  "counts": {
+    "initial_calls": 540,
+    "revision_calls": 540,
+    "total_planned_calls": 1080,
+    "main_prediction_records": 10800,
+    "legacy_prediction_records": 0
+  },
+  "statistics": {
+    "bootstrap_seed": 20261008,
+    "resamples": 10000,
+    "primary_uncertainty": "paired cluster bootstrap over fixed10-pair inference batches; average two replicates within item; resample30batches",
+    "sensitivity": "resample observed author/source groups, with all pairs of a group kept together; report few-group limitation",
+    "comparisons": [
+      "C-S",
+      "E-S",
+      "R-S",
+      "V-R",
+      "W-V"
+    ],
+    "multiplicity": "descriptive paired95percentile intervals; no unadjusted significance declarations",
+    "replicate_stability": "per model/condition exact label-set consistency across two repeats"
+  },
+  "primary_metric": "joint exact agreement of stress position and unordered canonical feature set with stored automatic reference",
+  "secondary_metrics": [
+    "stress agreement",
+    "feature set exact agreement",
+    "feature micro F1",
+    "per-item feature F1",
+    "per-position joint agreement",
+    "core joint agreement excluding COPY and MOSAIC in both prediction and reference",
+    "invalid rate",
+    "token usage",
+    "latency"
+  ],
+  "denominators": "All planned predictions retained; absent, malformed or tool-using outputs are joint/type/exact errors. Feature micro misses count all reference features as FN.",
+  "empty_features": "Per-item F1=1 for two empty sets,0 for empty/nonempty; invalid output F1=0 even if reference empty.",
+  "revision_failure_policy": "No valid S inference means dependent R/V/W prediction errors for whole batch; do not replace S.",
+  "replication": "Two fresh independent requests per batch; same frozen batches and examples as original; no score-adaptive changes",
+  "ordering": "Original astra template order across replicate, batch, condition; panel declaration order inside each template slot",
+  "transport": "OpenRouter direct chat-completions API; exact model/provider/settings frozen per model",
+  "scope": [
+    "ModernGreek only",
+    "positive automatic-reference pool, not rhyme detection",
+    "balancedstress sample is not corpus prevalence",
+    "no human truth claim",
+    "verifier feedback is related to the label-producing system, so agreement gains are not independent accuracy gains",
+    "source corpus systematically omits some COPY/MOSAIC features emitted by live verifier; full-set primary is literal stored-label agreement; core joint metric is a prespecified sensitivity analysis",
+    "no poem identifiers, only pair duplicate filtering",
+    "full context condition is text extraction with documented source recovery",
+    "Original OpenAI-family results used Codex CLI; extension uses a direct API. Interface, serving and reasoning differences confound cross-model comparisons.",
+    "Exact request model IDs do not independently attest immutable model weights; provider/model metadata are retained.",
+    "Synthetic access checks may determine access/settings before this freeze; panel/labels/settings cannot change in response to main scores."
+  ],
+  "frozen_date_utc": "2026-10-11",
+  "release_transformation": "Scientific design/settings retained; private evidence inventories and exact workflow timestamps omitted."
+}

@@ -23,3 +23,7 @@ Per-prediction response hashes were removed. Private event provenance cannot be 
 `results/extension_2026-10-10/` adds 28,800 prediction rows, 14,400 repeat-averaged rows, 2,880 planned aggregate jobs, the complete extension summary and matched original comparisons. It reuses the existing public opaque group codes. Blocked revisions remain in planned denominators. Source-response hashes and remote IDs are omitted. The new adapter verifies all released main-extension scientific fields exactly. The separately named `synthetic_format_load_summary.json` contains post hoc diagnostic observations outside those scores and denominators; its artificial inputs and exact request specification are under `docs/diagnostics/`.
 
 `posthoc_repair_localization.json` adds descriptive V/W transition counts for all eleven models, conditional on the published 50/250 partition of opaque item IDs by changed/matching `raw_feedback`. It includes only model IDs, item memberships, counts, semantics and relative source hashes; source feedback is omitted. These group labels do not imply unchanged complete verifier objects or prompts, and the public replay cannot independently regenerate membership from omitted feedback.
+
+## Three-alias API cohort
+
+`results/extension_2026-10-11_openai_api/` adds categorical predictions, repeat averages, cumulative aggregate jobs, the complete scientific summary and matched Codex comparison. Private response/evidence paths and hashes are omitted. All planned failures remain. See [scope and replay](OPENAI_API_2026-10-11.md).
